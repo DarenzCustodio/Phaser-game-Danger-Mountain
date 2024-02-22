@@ -2,7 +2,7 @@
 // You can write more code here
 
 /* START OF COMPILED CODE */
-import {Scene} from "phaser"
+
 import Phaser from "phaser";
 import PlatformPrefab from "../gameComponents/PlatformPrefab";
 import PlayerPrefab from "../gameComponents/PlayerPrefab";
@@ -12,7 +12,7 @@ import ScorePrefab from "../gameComponents/ScorePrefab";
 import BombPrefab from "../gameComponents/BombPrefab";
 /* END-USER-IMPORTS */
 
-export class Level extends Scene {
+export default class Level extends Phaser.Scene {
 
 	constructor() {
 		super("Level");
@@ -34,9 +34,10 @@ export class Level extends Scene {
 		const upKey = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
 
 		// raoni_dorim_mountains_day_highress_01
-		const raoni_dorim_mountains_day_highress_01 = this.add.image(1043.5730081474985, 614.4887740610461, "raoni-dorim-mountains-day-highress-01");
-		raoni_dorim_mountains_day_highress_01.scaleX = 1.087055216820311;
-		raoni_dorim_mountains_day_highress_01.scaleY = 1.7653089609415387;
+		const raoni_dorim_mountains_day_highress_01 = this.add.image(1047.686500929647, 614.48876953125, "raoni-dorim-mountains-day-highress-01");
+		raoni_dorim_mountains_day_highress_01.scaleX = -2.0578809413272423;
+		raoni_dorim_mountains_day_highress_01.scaleY = 4.009677200020188;
+		raoni_dorim_mountains_day_highress_01.setOrigin(0.5019708745293673, 0.5);
 
 		// platformsLayer
 		const platformsLayer = this.add.layer();
@@ -171,12 +172,11 @@ export class Level extends Scene {
 	// Write your code here
 
 	create() {
-
 		this.editorCreate();
 		this.initCamera();
 
-		
-		
+
+
         this.input.on('pointerdown', () => {
             this.scene.sleep('Level').run('MainMenu')
 			this.player.setPosition(74, 1210)
@@ -256,7 +256,7 @@ export class Level extends Scene {
 		}
 	}
 
-	
+
 	/* END-USER-CODE */
 }
 
