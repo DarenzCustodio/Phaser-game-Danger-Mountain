@@ -2,17 +2,17 @@
 // You can write more code here
 
 /* START OF COMPILED CODE */
-
+import {Scene} from "phaser"
 import Phaser from "phaser";
-import PlatformPrefab from "./PlatformPrefab";
-import PlayerPrefab from "./PlayerPrefab";
-import StarPrefab from "./StarPrefab";
-import ScorePrefab from "./ScorePrefab";
+import PlatformPrefab from "../gameComponents/PlatformPrefab";
+import PlayerPrefab from "../gameComponents/PlayerPrefab";
+import StarPrefab from "../gameComponents/StarPrefab";
+import ScorePrefab from "../gameComponents/ScorePrefab";
 /* START-USER-IMPORTS */
-import BombPrefab from "./BombPrefab";
+import BombPrefab from "../gameComponents/BombPrefab";
 /* END-USER-IMPORTS */
 
-export default class Level extends Phaser.Scene {
+export class Level extends Scene {
 
 	constructor() {
 		super("Level");
@@ -174,7 +174,18 @@ export default class Level extends Phaser.Scene {
 
 		this.editorCreate();
 		this.initCamera();
+
+		
+		
+        this.input.on('pointerdown', () => {
+            this.scene.sleep('Level').run('MainMenu')
+			this.player.setPosition(74, 1210)
+        });
 	}
+	// player
+	// const player = new PlayerPrefab(this, 74, 1210);
+	// this.add.existing(player);
+
 
 	private initCamera(): void {
 		this.cameras.main.setSize(this.game.scale.width, this.game.scale.height);
@@ -244,6 +255,8 @@ export default class Level extends Phaser.Scene {
 			this.player.jump();
 		}
 	}
+
+	
 	/* END-USER-CODE */
 }
 

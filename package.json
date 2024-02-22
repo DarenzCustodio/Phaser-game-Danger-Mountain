@@ -15,16 +15,17 @@
   "dependencies": {
     "@phasereditor2d/scripts-core": "^1.0.7",
     "@phasereditor2d/scripts-simple-animations": "^1.0.6",
-    "phaser": "^3.60.0"
+    "phaser": "^3.70.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^8.1.0",
     "html-webpack-plugin": "^5.3.1",
     "phaser-asset-pack-hashing": "^1.0.5",
-    "phasereditor2d-launcher": "^3.65.0",
+    "phasereditor2d-launcher": "^3.66.0",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
+    "vite": "^5.1.4",
     "webpack": "^5.28.0",
     "webpack-clean-plugin": "^0.2.3",
     "webpack-cli": "^4.9.1",

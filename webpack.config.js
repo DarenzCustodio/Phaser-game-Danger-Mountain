@@ -6,7 +6,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: {
-        main: "./src/index.ts"
+        main: "./src/main.ts"
     },
     optimization: {
         splitChunks: {
