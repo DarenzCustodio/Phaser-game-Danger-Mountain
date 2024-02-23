@@ -7,6 +7,7 @@ export class MainMenu extends Scene
     title!: GameObjects.Text;
     controlsText!: GameObjects.Text;
     startGameText!: GameObjects.Text;
+    PlayerSelector!: GameObjects.Text;
 
     constructor ()
     {
@@ -44,7 +45,7 @@ export class MainMenu extends Scene
         }).setInteractive();
         this.startGameText.on('pointerdown', () => {
             console.log('Settings button clicked');
-            this.scene.sleep('MainMenu').run('Level')      
+            this.scene.sleep('MainMenu').run('PlayerSelector')      
         }).setOrigin(0.5);
 
         
@@ -59,6 +60,7 @@ export class MainMenu extends Scene
             this.scene.sleep('MainMenu').run('Controls')
            
         });
+
 
       
     

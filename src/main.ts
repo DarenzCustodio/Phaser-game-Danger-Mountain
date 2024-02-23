@@ -1,7 +1,8 @@
 import { Boot } from './scenes/Boot';
 import { Controls } from './scenes/Controls';
-import { Level } from './scenes/Level';
+import  Level from "./scenes/Level";
 import { MainMenu } from './scenes/MainMenu';
+import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
 
 import { Game, Types } from "phaser";
@@ -25,7 +26,8 @@ const config: Types.Core.GameConfig = {
         arcade: {
             debug: false,
             gravity: {
-                y: 300
+                y: 300,
+                x: 0
             }
         }
     },
@@ -34,7 +36,8 @@ const config: Types.Core.GameConfig = {
         Preloader,
         MainMenu,
         Controls,
-        Level
+        Level, 
+        PlayerSelector  
     ]
 };
 
