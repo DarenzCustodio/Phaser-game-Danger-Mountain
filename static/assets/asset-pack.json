@@ -647,24 +647,6 @@
                 "key": "jump_ninja"
             },
             {
-                "url": "assets/knight_idle.png",
-                "frameConfig": {
-                    "frameWidth": 587,
-                    "frameHeight": 707,
-                    "startFrame": 0,
-                    "endFrame": -1,
-                    "spacing": 0,
-                    "margin": 0
-                },
-                "type": "spritesheet",
-                "key": "knight_idle"
-            },
-            {
-                "url": "assets/knight-animations.json",
-                "type": "animation",
-                "key": "knight-animations"
-            },
-            {
                 "url": "assets/MonedaP.png",
                 "frameConfig": {
                     "frameWidth": 16,

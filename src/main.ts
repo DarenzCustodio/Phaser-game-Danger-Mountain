@@ -1,6 +1,7 @@
 import { Boot } from './scenes/Boot';
 import { Controls } from './scenes/Controls';
 import  Level from "./scenes/Level";
+import Level2 from './scenes/Level2';
 import { MainMenu } from './scenes/MainMenu';
 import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
@@ -39,7 +40,8 @@ const config: Types.Core.GameConfig = {
         MainMenu,
         Level,
         Controls,
-        PlayerSelector 
+        PlayerSelector,
+        Level2 
     ],
 };
 
