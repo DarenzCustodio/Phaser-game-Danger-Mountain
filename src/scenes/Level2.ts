@@ -222,7 +222,7 @@ export default class Level2 extends Phaser.Scene {
 		this.initCamera();
 		// scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px' });
         this.input.on('pointerdown', () => {
-            this.scene.sleep('Level').run('MainMenu')
+            this.scene.sleep('Level2').run('MainMenu')
 			this.idle_ninja0.body.setGravityY(300);
 			this.idle_ninja0.setPosition(50, 1024)
         });
