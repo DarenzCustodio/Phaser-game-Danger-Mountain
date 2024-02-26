@@ -28,18 +28,18 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 
 		/* START-USER-CTR-CODE */
 
-		this.scene.events.once("scene-awake", () => this.awake());
+		// this.scene.events.once("scene-awake", () => this.awake());
 
 		/* END-USER-CTR-CODE */
 	}
 
-	public autoPlayAnimation: string = "turn ";
+	// public autoPlayAnimation: string = "turn ";
 
 	/* START-USER-CODE */
 
-	awake(){
-		this.play(this.autoPlayAnimation);
-	}
+	// awake(){
+	// 	this.play(this.autoPlayAnimation);
+	// }
 	die(){
 		this.setTint(0xff0000);
 		this.play(ANIM_TURN_);

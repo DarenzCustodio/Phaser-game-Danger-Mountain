@@ -7,25 +7,25 @@ import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default interface BombPrefab {
+export default interface SnowballPrefab {
 
 	 body: Phaser.Physics.Arcade.Body;
 }
 
-export default class BombPrefab extends Phaser.Physics.Arcade.Image {
+export default class SnowballPrefab extends Phaser.Physics.Arcade.Image {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 371, y ?? 229, texture || "bomb", frame);
+		super(scene, x ?? 277, y ?? 393, texture || "snowball", frame);
 
 		scene.physics.add.existing(this, false);
 		this.body.bounce.x = 1;
 		this.body.bounce.y = 1;
 		this.body.collideWorldBounds = true;
-		this.body.setSize(14, 14, false);
+		this.body.setSize(32, 32, false);
 
 		/* START-USER-CTR-CODE */
 
-		this.setVelocity(Phaser.Math.Between(-200, 200), 20);
+		this.setVelocity(Phaser.Math.Between(-500, 500), 500);
 
 		/* END-USER-CTR-CODE */
 	}

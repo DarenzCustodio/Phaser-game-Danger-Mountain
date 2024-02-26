@@ -3,6 +3,96 @@
         "files": [
             {
                 "url": "assets/1.png",
+                "type": "image",
+                "key": "1"
+            },
+            {
+                "url": "assets/10.png",
+                "type": "image",
+                "key": "10"
+            },
+            {
+                "url": "assets/11.png",
+                "type": "image",
+                "key": "11"
+            },
+            {
+                "url": "assets/12.png",
+                "type": "image",
+                "key": "12"
+            },
+            {
+                "url": "assets/13.png",
+                "type": "image",
+                "key": "13"
+            },
+            {
+                "url": "assets/14.png",
+                "type": "image",
+                "key": "14"
+            },
+            {
+                "url": "assets/15.png",
+                "type": "image",
+                "key": "15"
+            },
+            {
+                "url": "assets/16.png",
+                "type": "image",
+                "key": "16"
+            },
+            {
+                "url": "assets/17.png",
+                "type": "image",
+                "key": "17"
+            },
+            {
+                "url": "assets/18.png",
+                "type": "image",
+                "key": "18"
+            },
+            {
+                "url": "assets/2.png",
+                "type": "image",
+                "key": "2"
+            },
+            {
+                "url": "assets/3.png",
+                "type": "image",
+                "key": "3"
+            },
+            {
+                "url": "assets/4.png",
+                "type": "image",
+                "key": "4"
+            },
+            {
+                "url": "assets/5.png",
+                "type": "image",
+                "key": "5"
+            },
+            {
+                "url": "assets/6.png",
+                "type": "image",
+                "key": "6"
+            },
+            {
+                "url": "assets/7.png",
+                "type": "image",
+                "key": "7"
+            },
+            {
+                "url": "assets/8.png",
+                "type": "image",
+                "key": "8"
+            },
+            {
+                "url": "assets/9.png",
+                "type": "image",
+                "key": "9"
+            },
+            {
+                "url": "assets/1.png",
                 "frameConfig": {
                     "frameWidth": 110,
                     "frameHeight": 130,
@@ -220,6 +310,50 @@
                 "key": "animations"
             },
             {
+                "url": "assets/Arrow.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Arrow"
+            },
+            {
+                "url": "assets/Attack_1.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 3,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Attack_1"
+            },
+            {
+                "url": "assets/Attack_3.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 3,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Attack_3"
+            },
+            {
+                "url": "assets/background_glacial_mountains.png",
+                "type": "image",
+                "key": "background_glacial_mountains"
+            },
+            {
                 "url": "assets/attack_ninja.png",
                 "frameConfig": {
                     "frameWidth": 560,
@@ -241,6 +375,24 @@
                 "url": "assets/bomb.png",
                 "type": "image",
                 "key": "bomb"
+            },
+            {
+                "url": "assets/coin3.png",
+                "type": "image",
+                "key": "coin3"
+            },
+            {
+                "url": "assets/Dead.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 2,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Dead"
             },
             {
                 "url": "assets/Bush (1).png",
@@ -363,6 +515,58 @@
                 "url": "assets/FufuSuperDino.png",
                 "type": "image",
                 "key": "FufuSuperDino"
+            },
+            {
+                "url": "assets/Hurt.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 2,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Hurt"
+            },
+            {
+                "url": "assets/Idle.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 5,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Idle"
+            },
+            {
+                "url": "assets/Idle_2.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Idle_2"
+            },
+            {
+                "url": "assets/Jump.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 8,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Jump"
             },
             {
                 "url": "assets/Grass (1).png",
@@ -515,9 +719,35 @@
                 "key": "player"
             },
             {
-                "url": "assets/raoni-dorim-mountains-day-highress-01.jpg",
+                "url": "assets/Run.png",
+                "frameConfig": {
+                    "frameWidth": 128,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": 7,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Run"
+            },
+            {
+                "url": "assets/SNOW tileset.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "SNOW tileset"
+            },
+            {
+                "url": "assets/snowball.png",
                 "type": "image",
-                "key": "raoni-dorim-mountains-day-highress-01"
+                "key": "snowball"
             },
             {
                 "url": "assets/runknight.png",
@@ -572,9 +802,9 @@
                 "key": "Skeleton"
             },
             {
-                "url": "assets/sky.png",
+                "url": "assets/snowyMountain.png",
                 "type": "image",
-                "key": "sky"
+                "key": "snowyMountain"
             },
             {
                 "url": "assets/spr_coin_azu.png",
@@ -606,6 +836,24 @@
                 "url": "assets/star.png",
                 "type": "image",
                 "key": "star"
+            },
+            {
+                "url": "assets/swordsman_animations.json",
+                "type": "animation",
+                "key": "swordsman_animations"
+            },
+            {
+                "url": "assets/Walk.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Walk"
             },
             {
                 "url": "assets/Stone.png",

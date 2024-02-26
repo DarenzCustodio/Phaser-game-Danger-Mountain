@@ -4,13 +4,17 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import PlatformPrefab from "../gameComponents/PlatformPrefab";
-import PlayerPrefab from "../gameComponents/PlayerPrefab";
-import StarPrefab from "../gameComponents/StarPrefab";
+import SnowGround2Prefab from "./SnowGround2Prefab";
+import SnowPlatformMiddlePrefab from "./SnowPlatformMiddlePrefab";
+import SnowPlatformRightPrefab from "./SnowPlatformRightPrefab";
+import SwordsmanPrefab from "./SwordsmanPrefab";
+import CoinPrefab from "./CoinPrefab";
 import ScorePrefab from "../gameComponents/ScorePrefab";
 import Prefab from "../../static/assets/Prefab";
 /* START-USER-IMPORTS */
 import BombPrefab from "../gameComponents/BombPrefab";
+import SnowballPrefab from "./SnowballPrefab";
+import { ANIM_IDLE } from "../../static/assets/swordsman_animations";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
@@ -25,200 +29,344 @@ export default class Level extends Phaser.Scene {
 
 	editorCreate(): void {
 
-		// leftKey
-		const leftKey = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
+		// runRight
+		const runRight = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
 
-		// rightKey
-		const rightKey = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
+		// jump
+		const jump = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
 
-		// upKey
-		const upKey = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+		// runLeft
+		const runLeft = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
 
-		// right
-		const right = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
+		// attackKey
+		const attackKey = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
-		// left
-		const left = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
+		// background_glacial_mountains
+		const background_glacial_mountains = this.add.image(1725, 710, "background_glacial_mountains");
+		background_glacial_mountains.scaleX = 19.160102056153434;
+		background_glacial_mountains.scaleY = 10.78231466082158;
 
-		// up
-		const up = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+		// snowGroundLayer
+		const snowGroundLayer = this.add.layer();
 
-		// raoni_dorim_mountains_day_highress_01
-		const raoni_dorim_mountains_day_highress_01 = this.add.image(1047.686500929647, 614.48876953125, "raoni-dorim-mountains-day-highress-01");
-		raoni_dorim_mountains_day_highress_01.scaleX = -2.0578809413272423;
-		raoni_dorim_mountains_day_highress_01.scaleY = 4.009677200020188;
-		raoni_dorim_mountains_day_highress_01.setOrigin(0.5019708745293673, 0.5);
+		// SnowGround2
+		const snowGround2 = new SnowGround2Prefab(this, -265, 1195);
+		snowGroundLayer.add(snowGround2);
 
-		// platformsLayer
-		const platformsLayer = this.add.layer();
+		// SnowGround_1
+		const snowGround_1 = new SnowGround2Prefab(this, -140, 1195);
+		snowGround_1.flipX = false;
+		snowGround_1.flipY = false;
+		snowGroundLayer.add(snowGround_1);
 
-		// platformPrefab
-		const platformPrefab = new PlatformPrefab(this, 1220, 1185);
-		platformPrefab.scaleX = 3.9;
-		platformPrefab.scaleY = 1;
-		platformPrefab.tintTopLeft = 7689220;
-		platformPrefab.tintTopRight = 7689220;
-		platformPrefab.tintBottomLeft = 7689220;
-		platformPrefab.tintBottomRight = 7689220;
-		platformsLayer.add(platformPrefab);
+		// SnowGround_2
+		const snowGround_2 = new SnowGround2Prefab(this, -15, 1195);
+		snowGroundLayer.add(snowGround_2);
 
-		// platformPrefab_1
-		const platformPrefab_1 = new PlatformPrefab(this, 1200, 1217);
-		platformPrefab_1.scaleX = 4;
-		platformPrefab_1.scaleY = 1;
-		platformPrefab_1.tintTopLeft = 7689220;
-		platformPrefab_1.tintTopRight = 7689220;
-		platformPrefab_1.tintBottomLeft = 7689220;
-		platformPrefab_1.tintBottomRight = 7689220;
-		platformsLayer.add(platformPrefab_1);
+		// SnowGround_3
+		const snowGround_3 = new SnowGround2Prefab(this, 110, 1195);
+		snowGround_3.flipX = false;
+		snowGround_3.flipY = false;
+		snowGroundLayer.add(snowGround_3);
 
-		// platformPrefab_2
-		const platformPrefab_2 = new PlatformPrefab(this, 1240, 1157);
-		platformPrefab_2.scaleX = 3.8;
-		platformPrefab_2.scaleY = 1;
-		platformPrefab_2.tintTopLeft = 7689220;
-		platformPrefab_2.tintTopRight = 7689220;
-		platformPrefab_2.tintBottomLeft = 7689220;
-		platformPrefab_2.tintBottomRight = 7689220;
-		platformsLayer.add(platformPrefab_2);
+		// SnowGround_4
+		const snowGround_4 = new SnowGround2Prefab(this, 235, 1195);
+		snowGroundLayer.add(snowGround_4);
 
-		// platformPrefab_3
-		const platformPrefab_3 = new PlatformPrefab(this, 1000, 1249);
-		platformPrefab_3.scaleX = 5;
-		platformPrefab_3.scaleY = 1;
-		platformPrefab_3.tintTopLeft = 1399324;
-		platformPrefab_3.tintTopRight = 1399324;
-		platformPrefab_3.tintBottomLeft = 1399324;
-		platformPrefab_3.tintBottomRight = 1399324;
-		platformsLayer.add(platformPrefab_3);
+		// SnowGround_5
+		const snowGround_5 = new SnowGround2Prefab(this, 610, 1195);
+		snowGround_5.flipX = false;
+		snowGround_5.flipY = false;
+		snowGroundLayer.add(snowGround_5);
 
-		// player
-		const player = new PlayerPrefab(this, 74, 1210);
-		this.add.existing(player);
+		// SnowGround_6
+		const snowGround_6 = new SnowGround2Prefab(this, 485, 1195);
+		snowGroundLayer.add(snowGround_6);
 
-		// starsLayer
-		const starsLayer = this.add.layer();
+		// SnowGround_7
+		const snowGround_7 = new SnowGround2Prefab(this, 360, 1195);
+		snowGround_7.flipX = false;
+		snowGround_7.flipY = false;
+		snowGroundLayer.add(snowGround_7);
 
-		// star
-		const star = new StarPrefab(this, 1565, 1065);
-		starsLayer.add(star);
+		// SnowGround_8
+		const snowGround_8 = new SnowGround2Prefab(this, 735, 1195);
+		snowGroundLayer.add(snowGround_8);
 
-		// star_1
-		const star_1 = new StarPrefab(this, 931, 1081);
-		starsLayer.add(star_1);
+		// SnowGround_9
+		const snowGround_9 = new SnowGround2Prefab(this, 1360, 1195);
+		snowGround_9.flipX = false;
+		snowGround_9.flipY = false;
+		snowGroundLayer.add(snowGround_9);
 
-		// star_2
-		const star_2 = new StarPrefab(this, 1347, 1067);
-		starsLayer.add(star_2);
+		// SnowGround_10
+		const snowGround_10 = new SnowGround2Prefab(this, 1485, 1195);
+		snowGroundLayer.add(snowGround_10);
 
-		// star_3
-		const star_3 = new StarPrefab(this, 1184, 1066);
-		starsLayer.add(star_3);
+		// SnowGround_12
+		const snowGround_12 = new SnowGround2Prefab(this, 1235, 1195);
+		snowGroundLayer.add(snowGround_12);
 
-		// star_4
-		const star_4 = new StarPrefab(this, 446, 1140);
-		starsLayer.add(star_4);
+		// SnowGround_13
+		const snowGround_13 = new SnowGround2Prefab(this, 1110, 1195);
+		snowGround_13.flipX = false;
+		snowGround_13.flipY = false;
+		snowGroundLayer.add(snowGround_13);
 
-		// star_5
-		const star_5 = new StarPrefab(this, 695, 1108);
-		starsLayer.add(star_5);
+		// SnowGround_14
+		const snowGround_14 = new SnowGround2Prefab(this, 985, 1195);
+		snowGroundLayer.add(snowGround_14);
 
-		// bombsLayer
-		const bombsLayer = this.add.layer();
+		// SnowGround_15
+		const snowGround_15 = new SnowGround2Prefab(this, 860, 1195);
+		snowGround_15.flipX = false;
+		snowGround_15.flipY = false;
+		snowGroundLayer.add(snowGround_15);
+
+		// SnowGround_11
+		const snowGround_11 = new SnowGround2Prefab(this, 1585, 1195);
+		snowGroundLayer.add(snowGround_11);
+
+		// SnowGround_16
+		const snowGround_16 = new SnowGround2Prefab(this, 2710, 1195);
+		snowGround_16.flipX = false;
+		snowGround_16.flipY = false;
+		snowGroundLayer.add(snowGround_16);
+
+		// SnowGround_17
+		const snowGround_17 = new SnowGround2Prefab(this, 2835, 1195);
+		snowGroundLayer.add(snowGround_17);
+
+		// SnowGround_18
+		const snowGround_18 = new SnowGround2Prefab(this, 2960, 1195);
+		snowGround_18.flipX = false;
+		snowGround_18.flipY = false;
+		snowGroundLayer.add(snowGround_18);
+
+		// SnowGround_22
+		const snowGround_22 = new SnowGround2Prefab(this, 2585, 1195);
+		snowGroundLayer.add(snowGround_22);
+
+		// SnowGround_23
+		const snowGround_23 = new SnowGround2Prefab(this, 2210, 1195);
+		snowGround_23.flipX = false;
+		snowGround_23.flipY = false;
+		snowGroundLayer.add(snowGround_23);
+
+		// SnowGround_24
+		const snowGround_24 = new SnowGround2Prefab(this, 2335, 1195);
+		snowGroundLayer.add(snowGround_24);
+
+		// SnowGround_25
+		const snowGround_25 = new SnowGround2Prefab(this, 2460, 1195);
+		snowGround_25.flipX = false;
+		snowGround_25.flipY = false;
+		snowGroundLayer.add(snowGround_25);
+
+		// SnowGround_26
+		const snowGround_26 = new SnowGround2Prefab(this, 2085, 1195);
+		snowGroundLayer.add(snowGround_26);
+
+		// SnowGround_27
+		const snowGround_27 = new SnowGround2Prefab(this, 1960, 1195);
+		snowGround_27.flipX = false;
+		snowGround_27.flipY = false;
+		snowGroundLayer.add(snowGround_27);
+
+		// SnowGround_28
+		const snowGround_28 = new SnowGround2Prefab(this, 1835, 1195);
+		snowGroundLayer.add(snowGround_28);
+
+		// SnowGround_29
+		const snowGround_29 = new SnowGround2Prefab(this, 1710, 1195);
+		snowGround_29.flipX = false;
+		snowGround_29.flipY = false;
+		snowGroundLayer.add(snowGround_29);
+
+		// snowPlatformLayer
+		const snowPlatformLayer = this.add.layer();
+
+		// snowPlatformLeft
+		const snowPlatformLeft = this.physics.add.staticImage(340, 900, "14");
+		snowPlatformLeft.body.setSize(128, 93, false);
+		snowPlatformLayer.add(snowPlatformLeft);
+
+		// snowPlatformMiddle
+		const snowPlatformMiddle = new SnowPlatformMiddlePrefab(this, 460, 900);
+		snowPlatformLayer.add(snowPlatformMiddle);
+
+		// snowPlatformRight
+		const snowPlatformRight = new SnowPlatformRightPrefab(this, 585, 900);
+		snowPlatformLayer.add(snowPlatformRight);
+
+		// snowPlatformLeft_1
+		const snowPlatformLeft_1 = this.physics.add.staticImage(910, 735, "14");
+		snowPlatformLeft_1.body.setSize(128, 93, false);
+		snowPlatformLayer.add(snowPlatformLeft_1);
+
+		// snowPlatformRight_1
+		const snowPlatformRight_1 = new SnowPlatformRightPrefab(this, 1155, 735);
+		snowPlatformLayer.add(snowPlatformRight_1);
+
+		// snowPlatformMiddle_1
+		const snowPlatformMiddle_1 = new SnowPlatformMiddlePrefab(this, 1030, 735);
+		snowPlatformLayer.add(snowPlatformMiddle_1);
+
+		// snowPlatformLeft_2
+		const snowPlatformLeft_2 = this.physics.add.staticImage(1510, 925, "14");
+		snowPlatformLeft_2.body.setSize(128, 93, false);
+		snowPlatformLayer.add(snowPlatformLeft_2);
+
+		// snowPlatformRight_2
+		const snowPlatformRight_2 = new SnowPlatformRightPrefab(this, 1755, 925);
+		snowPlatformLayer.add(snowPlatformRight_2);
+
+		// snowPlatformMiddle_2
+		const snowPlatformMiddle_2 = new SnowPlatformMiddlePrefab(this, 1630, 925);
+		snowPlatformLayer.add(snowPlatformMiddle_2);
+
+		// snowPlatformLeft_3
+		const snowPlatformLeft_3 = this.physics.add.staticImage(2025, 725, "14");
+		snowPlatformLeft_3.body.setSize(128, 93, false);
+		snowPlatformLayer.add(snowPlatformLeft_3);
+
+		// snowPlatformMiddle_3
+		const snowPlatformMiddle_3 = new SnowPlatformMiddlePrefab(this, 2145, 725);
+		snowPlatformLayer.add(snowPlatformMiddle_3);
+
+		// snowPlatformRight_3
+		const snowPlatformRight_3 = new SnowPlatformRightPrefab(this, 2270, 725);
+		snowPlatformLayer.add(snowPlatformRight_3);
+
+		// snowPlatformLeft_4
+		const snowPlatformLeft_4 = this.physics.add.staticImage(2530, 915, "14");
+		snowPlatformLeft_4.body.setSize(128, 93, false);
+		snowPlatformLayer.add(snowPlatformLeft_4);
+
+		// snowPlatformRight_4
+		const snowPlatformRight_4 = new SnowPlatformRightPrefab(this, 2775, 915);
+		snowPlatformLayer.add(snowPlatformRight_4);
+
+		// snowPlatformMiddle_4
+		const snowPlatformMiddle_4 = new SnowPlatformMiddlePrefab(this, 2650, 915);
+		snowPlatformLayer.add(snowPlatformMiddle_4);
+
+		// swordsman
+		const swordsman = new SwordsmanPrefab(this, 16, 1043);
+		this.add.existing(swordsman);
+		swordsman.body.collideWorldBounds = true;
+
+		// coinsLayer
+		const coinsLayer = this.add.layer();
+
+		// coin_1
+		const coin_1 = new CoinPrefab(this, 360, 760);
+		coinsLayer.add(coin_1);
+
+		// coin_2
+		const coin_2 = new CoinPrefab(this, 560, 735);
+		coinsLayer.add(coin_2);
+
+		// coin_3
+		const coin_3 = new CoinPrefab(this, 835, 985);
+		coinsLayer.add(coin_3);
+
+		// coin_4
+		const coin_4 = new CoinPrefab(this, 975, 620);
+		coinsLayer.add(coin_4);
+
+		// coin_5
+		const coin_5 = new CoinPrefab(this, 1135, 640);
+		coinsLayer.add(coin_5);
+
+		// coin_6
+		const coin_6 = new CoinPrefab(this, 1300, 1045);
+		coinsLayer.add(coin_6);
+
+		// coin_7
+		const coin_7 = new CoinPrefab(this, 1605, 825);
+		coinsLayer.add(coin_7);
+
+		// coin_8
+		const coin_8 = new CoinPrefab(this, 2020, 1005);
+		coinsLayer.add(coin_8);
+
+		// coin_9
+		const coin_9 = new CoinPrefab(this, 2100, 605);
+		coinsLayer.add(coin_9);
+
+		// coin_10
+		const coin_10 = new CoinPrefab(this, 2630, 780);
+		coinsLayer.add(coin_10);
+
+		// snowballsLayer
+		const snowballsLayer = this.add.layer();
 
 		// scoreText
-		const scoreText = new ScorePrefab(this, 46, 19);
+		const scoreText = new ScorePrefab(this, 20, 995);
 		this.add.existing(scoreText);
-
-		// player0
-		this.add.image(371, 1209, "player", 0);
-
-		// player1
-		const player1 = new Prefab(this, 182, 1161);
-		this.add.existing(player1);
-		player1.flipX = false;
-		player1.flipY = false;
-		player1.body.collideWorldBounds = true;
-
-		// 130
-		this.add.image(645, 956, "13", 0);
-
-		// 140
-		this.add.image(768, 957, "14", 0);
-
-		// 150
-		this.add.image(892, 957, "15", 0);
-
-		// 2
-		this.add.image(1448, 953, "2");
-
-		// star_6
-		
-
-		// star_7
-		const star_7 = this.add.image(776, 872, "star");
-		star_7.angle += 1;
-
-		// star_8
-		const star_8 = this.add.image(875, 872, "star");
-		star_8.angle += 1;
-
-		// star_9
-		const star_9 = this.add.image(1443, 850, "star");
-		star_9.angle += 1;
+		scoreText.tintFill = true;
+		scoreText.tintTopLeft = 14603783;
+		scoreText.tintTopRight = 14603783;
+		scoreText.tintBottomLeft = 14603783;
+		scoreText.tintBottomRight = 14603783;
+		scoreText.setStyle({ "fontFamily": "Courier", "fontSize": "40px" });
 
 		// lists
-		const platforms_ = [platformPrefab_2, platformPrefab_1, platformPrefab];
+		const platforms_: Array<any> = [];
+		const snowGround = [snowGround2, snowGround_29, snowGround_28, snowGround_27, snowGround_26, snowGround_25, snowGround_24, snowGround_23, snowGround_22, snowGround_18, snowGround_17, snowGround_16, snowGround_11, snowGround_15, snowGround_14, snowGround_13, snowGround_12, snowGround_10, snowGround_9, snowGround_8, snowGround_7, snowGround_6, snowGround_5, snowGround_4, snowGround_3, snowGround_2, snowGround_1];
+		const snowPlatforms = [snowPlatformLeft, snowPlatformRight, snowPlatformMiddle];
 
-		// player_platforms_collider
-		const player_platforms_collider = this.physics.add.collider(player, platformsLayer.list);
+		// swordsman_snowGround_collider
+		const swordsman_snowGround_collider = this.physics.add.collider(swordsman, snowGroundLayer.list);
 
-		// stars_platforms_collider
-		const stars_platforms_collider = this.physics.add.collider(starsLayer.list, platformsLayer.list);
+		// swordsman_snowPlatforms_collider
+		this.physics.add.collider(swordsman, snowPlatformLayer.list);
 
-		// player_stars_collider
-		const player_stars_collider = this.physics.add.overlap(player, starsLayer.list, this.collectStar as any, undefined, this );
+		// coins_snowGround_collider
+		const coins_snowGround_collider = this.physics.add.collider(coinsLayer.list, snowGroundLayer.list);
 
-		// bombs_platforms_collider
-		const bombs_platforms_collider = this.physics.add.collider(bombsLayer.list, platformsLayer.list);
+		// coins_snowPlatforms_collider
+		const coins_snowPlatforms_collider = this.physics.add.collider(coinsLayer.list, snowPlatformLayer.list);
 
-		// player_bombs_collider
-		const player_bombs_collider = this.physics.add.collider(player, bombsLayer.list, this.hitBomb as any, undefined, this);
+		// swordsman_coins_collider
+		const swordsman_coins_collider = this.physics.add.overlap(swordsman, coinsLayer.list, this.collectCoins as any, undefined, this);
 
-		// knight_platforms_collider
-		this.physics.add.collider(player1, platformsLayer.list);
+		// snowballs_snowGround_collider
+		const snowballs_snowGround_collider = this.physics.add.collider(snowballsLayer.list, snowGroundLayer.list);
 
-		// player (prefab fields)
-		player.autoPlayAnimation = "left ";
+		// snowballs_snowPlatforms_collider
+		const snowballs_snowPlatforms_collider = this.physics.add.collider(snowballsLayer.list, snowPlatformLayer.list);
 
-		this.player = player;
-		this.starsLayer = starsLayer;
-		this.bombsLayer = bombsLayer;
+		// swordsman_snowballs_collider
+		const swordsman_snowballs_collider = this.physics.add.collider(swordsman, snowballsLayer.list, this.hitSnowball as any, undefined, this);
+
+		this.swordsman = swordsman;
+		this.coinsLayer = coinsLayer;
+		this.snowballsLayer = snowballsLayer;
 		this.scoreText = scoreText;
-		this.player1 = player1;
-		this.leftKey = leftKey;
-		this.rightKey = rightKey;
-		this.upKey = upKey;
-		this.right = right;
-		this.left = left;
-		this.up = up;
+		this.runRight = runRight;
+		this.jump = jump;
+		this.runLeft = runLeft;
+		this.attackKey = attackKey;
 		this.platforms_ = platforms_;
+		this.snowGround = snowGround;
+		this.snowPlatforms = snowPlatforms;
 
 		this.events.emit("scene-awake");
 	}
 
-	private player!: PlayerPrefab;
-	private starsLayer!: Phaser.GameObjects.Layer;
-	private bombsLayer!: Phaser.GameObjects.Layer;
+	private swordsman!: SwordsmanPrefab;
+	private coinsLayer!: Phaser.GameObjects.Layer;
+	private snowballsLayer!: Phaser.GameObjects.Layer;
 	private scoreText!: ScorePrefab;
-	private player1!: Prefab;
-	private leftKey!: Phaser.Input.Keyboard.Key;
-	private rightKey!: Phaser.Input.Keyboard.Key;
-	private upKey!: Phaser.Input.Keyboard.Key;
-	private right!: Phaser.Input.Keyboard.Key;
-	private left!: Phaser.Input.Keyboard.Key;
-	private up!: Phaser.Input.Keyboard.Key;
-	private platforms_!: PlatformPrefab[];
+	private runRight!: Phaser.Input.Keyboard.Key;
+	private jump!: Phaser.Input.Keyboard.Key;
+	private runLeft!: Phaser.Input.Keyboard.Key;
+	private attackKey!: Phaser.Input.Keyboard.Key;
+	private platforms_!: Array<any>;
+	private snowGround!: SnowGround2Prefab[];
+	private snowPlatforms!: Array<Phaser.Physics.Arcade.Image|SnowPlatformRightPrefab|SnowPlatformMiddlePrefab>;
 
 	/* START-USER-CODE */
 
@@ -230,58 +378,56 @@ export default class Level extends Phaser.Scene {
 		this.editorCreate();
 		this.initCamera();
 
-
-
-        this.input.on('pointerdown', () => {
+		this.input.on('pointerdown', () => {
             this.scene.sleep('Level').run('MainMenu')
-			this.player.setPosition(74, 1210)
+			this.swordsman.setPosition(74, 1000)
+			this.swordsman.clearTint();
+			this.swordsman.play(ANIM_IDLE)
+			this.physics.resume()
         });
 
 		
 	}
-	// player
-	// const player = new PlayerPrefab(this, 74, 1210);
-	// this.add.existing(player);
-
 
 	private initCamera(): void {
 		this.cameras.main.setSize(this.game.scale.width, this.game.scale.height);
-		this.cameras.main.startFollow(this.player1, true, 0.09, 0.09);
-		this.cameras.main.setZoom(1.75);
+		this.cameras.main.startFollow(this.swordsman, true, 0.09, 0.09);
+		this.cameras.main.setZoom(1.25);
 	  }
 
-	private collectStar(player1: Prefab, star: StarPrefab){
-		star.collected();
+	private collectCoins(player: SwordsmanPrefab, coin: CoinPrefab){
+
+		coin.collected();
 
 		this.scoreText.addScore(10);
 
-		if(this.noStarActive()){
+		if(this.noCoinActive()){
 
-			// spawn the stars again 
-			// for(const obj of this.starsLayer.list){
-			// 	const star = obj as StarPrefab;
+			for(const obj of this.coinsLayer.list){
+				const coin = obj as CoinPrefab;
 
-			// 	star.resetStar();
-			// }
-			// spawn a bomb 
-			var bombX = (this.player1.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+				coin.resetCoin();
+			}
 
-			const bomb = new BombPrefab(this, bombX, 0);
-			this.bombsLayer.add(bomb);
+			var snowballX = (this.swordsman.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+
+			// spawn snowball 
+			const snowball = new SnowballPrefab(this, snowballX, 0)
+			this.snowballsLayer.add(snowball)
 		}
 	}
 
-	private hitBomb(player: Prefab, bomb: BombPrefab){
+
+	private hitSnowball(swordsman: SwordsmanPrefab, snowball: SnowballPrefab){
 		this.physics.pause();
-		this.player1.die();
+		swordsman.die();
 		this.gameOver = true;
 	}
 
+	private noCoinActive(){
 
-	private noStarActive(){
-
-		for(const star of this.starsLayer.list){
-			if(star.active){
+		for(const coin of this.coinsLayer.list){
+			if(coin.active){
 				return false;
 			}
 		}
@@ -292,28 +438,29 @@ export default class Level extends Phaser.Scene {
 		if(this.gameOver){
 			return;
 		}
-
-		// move to the left 
-		this.updatePlayer();
+		this.scoreText.x = this.swordsman.body.position.x;
+		this.scoreText.y = this.swordsman.body.position.y; 
+		this.updateSwordsman();
 	}
 
-	private updatePlayer() {
-		
-		if (this.left.isDown) {
-			this.player1.moveLeft();
-
-		} else if (this.right.isDown) {
-			this.player1.moveRight()
-		} else {
-			this.player1.stopMoving();
-
+	private updateSwordsman(){
+		// swordsman 
+		if(this.runLeft.isDown){
+			this.swordsman.setFlipX(true)
+			this.swordsman.moveLeft()
+		}else if(this.runRight.isDown){
+			this.swordsman.setFlipX(false)
+			this.swordsman.moveRight()
+		}else if(this.attackKey.isDown){
+			this.swordsman.attack()
 		}
-		if (this.up.isDown && (this.player.body.touching.down || this.player.body.onFloor())) {
-			this.player1.jump();
+		else {
+			this.swordsman.stopMoving();
+		}
+		if(this.jump.isDown && this.swordsman.body.onFloor()){
+			this.swordsman.jump();
 		}
 	}
-
-
 	/* END-USER-CODE */
 }
 

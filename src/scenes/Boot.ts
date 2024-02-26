@@ -16,13 +16,14 @@ export class Boot extends Scene
         //  The smaller the file size of the assets, the better, as the Boot Scene itself has no preloader.
         // this.load.pack("pack", preloadAssetPackUrl);
         // this.load.pack("animations", animationsUrl)
+        this.load.image('background', "assets/mainMenuBackground.png")
         this.load.pack("assets", assetPackUrl)
         this.load.pack("pack", preloadAssetPackUrl);
-        this.load.image('background', 'assets/bg.png');
     }
 
     create ()
     {
+        console.log("booted")
         this.scene.start('Preloader');
     }
 }

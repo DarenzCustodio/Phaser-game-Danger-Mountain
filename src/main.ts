@@ -1,20 +1,28 @@
 import { Boot } from './scenes/Boot';
-import Level from './scenes/Level';
+import { Controls } from './scenes/Controls';
+import  Level from "./scenes/Level";
 import { MainMenu } from './scenes/MainMenu';
+import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
 import Level2 from './scenes/Level2';
 import { Game, Types } from "phaser";
 
+
 //  Find out more information about the Game Config at:
 //  https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
 const config: Types.Core.GameConfig = {
+
+    
     type: Phaser.AUTO,
     width: 3000,
-    height: 1250,
+    height: 2000,
     parent: 'game-container',
-    backgroundColor: '#028af8',
+    backgroundColor: 0x27ae60,
     scale: {
-        mode: Phaser.Scale.FIT,
+        
+
+        // mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     physics: {
         default: "arcade", 
@@ -30,8 +38,10 @@ const config: Types.Core.GameConfig = {
         Boot,
         Preloader,
         MainMenu,
-        Level2
-    ]
+        Level,
+        Controls,
+        PlayerSelector 
+    ],
 };
 
 export default new Game(config);

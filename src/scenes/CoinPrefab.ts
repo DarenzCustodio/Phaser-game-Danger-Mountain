@@ -7,32 +7,37 @@ import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default interface BombPrefab {
+export default interface CoinPrefab {
 
 	 body: Phaser.Physics.Arcade.Body;
 }
 
-export default class BombPrefab extends Phaser.Physics.Arcade.Image {
+export default class CoinPrefab extends Phaser.Physics.Arcade.Image {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 371, y ?? 229, texture || "bomb", frame);
+		super(scene, x ?? 195, y ?? 325, texture || "coin3", frame);
 
+		this.scaleX = 2.929085177093522;
+		this.scaleY = 2.655114589252231;
 		scene.physics.add.existing(this, false);
-		this.body.bounce.x = 1;
-		this.body.bounce.y = 1;
-		this.body.collideWorldBounds = true;
-		this.body.setSize(14, 14, false);
+		this.body.setSize(16, 16, false);
 
 		/* START-USER-CTR-CODE */
 
-		this.setVelocity(Phaser.Math.Between(-200, 200), 20);
+		this.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
+
 
 		/* END-USER-CTR-CODE */
 	}
 
 	/* START-USER-CODE */
 
-	// Write your code here.
+	collected(){
+		this.disableBody(true, true);
+	}
+	resetCoin(){
+		this.enableBody(true, this.x, 0, true, true);
+	}
 
 	/* END-USER-CODE */
 }
