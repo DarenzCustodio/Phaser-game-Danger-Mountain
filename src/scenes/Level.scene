@@ -730,124 +730,6 @@
             "tintFill": true,
             "fontFamily": "Courier",
             "fontSize": "40px"
-            "x": 46,
-            "y": 19
-        },
-        {
-            "type": "Image",
-            "id": "f7d45bbc-d8df-4599-80ce-c5b966cbfd1c",
-            "label": "player0",
-            "texture": {
-                "key": "player",
-                "frame": 0
-            },
-            "x": 371,
-            "y": 1209
-        },
-        {
-            "prefabId": "286a4beb-af08-446f-bae9-ce3e59b05178",
-            "id": "e81c40e8-f037-48a7-824b-d066cc23f8ab",
-            "unlock": [
-                "x",
-                "y",
-                "collideWorldBounds",
-                "flipX",
-                "flipY"
-            ],
-            "label": "player1",
-            "scope": "CLASS",
-            "x": 182,
-            "y": 1161,
-            "flipX": false,
-            "flipY": false,
-            "collideWorldBounds": true
-        },
-        {
-            "type": "Image",
-            "id": "5cb8fcc9-40fe-402c-b899-503af4800378",
-            "label": "130",
-            "texture": {
-                "key": "13",
-                "frame": 0
-            },
-            "x": 645,
-            "y": 956
-        },
-        {
-            "type": "Image",
-            "id": "42582485-14ec-4f38-9c9b-832bfc7956fd",
-            "label": "140",
-            "texture": {
-                "key": "14",
-                "frame": 0
-            },
-            "x": 768,
-            "y": 957
-        },
-        {
-            "type": "Image",
-            "id": "1b8d5427-945f-4fff-9407-dd4b21c08e76",
-            "label": "150",
-            "texture": {
-                "key": "15",
-                "frame": 0
-            },
-            "x": 892,
-            "y": 957
-        },
-        {
-            "type": "Image",
-            "id": "f223d9e0-12ad-4021-9442-2f494ba8e4a7",
-            "label": "2",
-            "texture": {
-                "key": "2"
-            },
-            "x": 1448,
-            "y": 953
-        },
-        {
-            "prefabId": "9072b96c-c6f6-4a7f-bcf1-2fdad4cec1b8",
-            "id": "38f8dc60-e49e-4faf-b3f2-68edc17d47a3",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "star_6",
-            "x": 678,
-            "y": 885
-        },
-        {
-            "type": "Image",
-            "id": "c1cacdbd-712b-486e-abc1-b20a11ef77bb",
-            "label": "star_7",
-            "texture": {
-                "key": "star"
-            },
-            "x": 776,
-            "y": 872,
-            "angle": 1
-        },
-        {
-            "type": "Image",
-            "id": "625b4fcf-3b67-48b7-87c9-2246ecd68f9f",
-            "label": "star_8",
-            "texture": {
-                "key": "star"
-            },
-            "x": 875,
-            "y": 872,
-            "angle": 1
-        },
-        {
-            "type": "Image",
-            "id": "29c80181-8ed0-4cd6-9541-a6607ad3aa8b",
-            "label": "star_9",
-            "texture": {
-                "key": "star"
-            },
-            "x": 1443,
-            "y": 850,
-            "angle": 1
         }
     ],
     "plainObjects": [
@@ -942,32 +824,6 @@
             "object2": "snowballsLayer.list",
             "collideCallback": "this.hitSnowball as any",
             "callbackContext": "this"
-        },
-        {
-            "id": "d986c595-69db-4f65-8b8f-1a67f9e86f3f",
-            "type": "Collider",
-            "label": "knight_platforms_collider",
-            "scope": "LOCAL",
-            "object1": "player1",
-            "object2": "platformsLayer.list"
-        },
-        {
-            "id": "58e81208-be6a-4ac1-b6a1-bd330ff29403",
-            "type": "Keyboard.Key",
-            "label": "right",
-            "keyCode": "RIGHT"
-        },
-        {
-            "id": "712703ea-0d23-40eb-a692-6ae79d1ed9c7",
-            "type": "Keyboard.Key",
-            "label": "left",
-            "keyCode": "LEFT"
-        },
-        {
-            "id": "8818bd79-82ca-4e24-acab-30f3ba8e402d",
-            "type": "Keyboard.Key",
-            "label": "up",
-            "keyCode": "UP"
         }
     ],
     "meta": {
@@ -1025,3 +881,4 @@
         }
     ]
 }
+​

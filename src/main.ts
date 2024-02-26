@@ -4,7 +4,6 @@ import  Level from "./scenes/Level";
 import { MainMenu } from './scenes/MainMenu';
 import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
-import Level2 from './scenes/Level2';
 import { Game, Types } from "phaser";
 
 
