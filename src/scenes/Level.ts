@@ -10,7 +10,6 @@ import SnowPlatformRightPrefab from "./SnowPlatformRightPrefab";
 import SwordsmanPrefab from "./SwordsmanPrefab";
 import CoinPrefab from "./CoinPrefab";
 import ScorePrefab from "../gameComponents/ScorePrefab";
-import Prefab from "../../static/assets/Prefab";
 /* START-USER-IMPORTS */
 import BombPrefab from "../gameComponents/BombPrefab";
 import SnowballPrefab from "./SnowballPrefab";
