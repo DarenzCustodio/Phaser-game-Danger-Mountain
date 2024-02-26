@@ -9,12 +9,15 @@ import { Game, Types } from "phaser";
 //  https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
 const config: Types.Core.GameConfig = {
     type: Phaser.AUTO,
-    width: 2000,
-    height: 1250,
+    width: 3000,
+    height: 2000,
     parent: 'game-container',
-    backgroundColor: '#028af8',
+    backgroundColor: 0x27ae60,
     scale: {
-        mode: Phaser.Scale.FIT,
+        
+
+        // mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     physics: {
         default: "arcade", 
@@ -30,7 +33,9 @@ const config: Types.Core.GameConfig = {
         Preloader,
         MainMenu,
         Level
-    ]
+    ],
+    zoom:1.15
+   
 };
 
 export default new Game(config);
