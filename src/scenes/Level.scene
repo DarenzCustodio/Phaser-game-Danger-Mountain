@@ -2,224 +2,707 @@
     "id": "b685c081-ee5f-4b67-b583-415922c9e2c4",
     "sceneType": "SCENE",
     "settings": {
+        "snapEnabled": true,
+        "snapWidth": 5,
+        "snapHeight": 5,
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
         "sceneKey": "Level",
         "compilerOutputLanguage": "TYPE_SCRIPT",
-        "borderWidth": 2000,
-        "borderHeight": 1250
+        "borderX": -200,
+        "borderY": 250,
+        "borderWidth": 3210,
+        "borderHeight": 1000
     },
     "displayList": [
         {
             "type": "Image",
-            "id": "61450a15-08b5-4e70-bf5e-ba532bafaba1",
-            "label": "raoni_dorim_mountains_day_highress_01",
+            "id": "4f73299a-affb-4144-a687-a6f12b544918",
+            "label": "background_glacial_mountains",
             "texture": {
-                "key": "raoni-dorim-mountains-day-highress-01"
+                "key": "background_glacial_mountains"
             },
-            "x": 1047.686500929647,
-            "y": 614.48876953125,
-            "scaleX": -2.0578809413272423,
-            "scaleY": 4.009677200020188,
-            "originX": 0.5019708745293673
+            "x": 1725,
+            "y": 710,
+            "scaleX": 19.160102056153434,
+            "scaleY": 10.78231466082158
         },
         {
             "type": "Layer",
-            "id": "e68d5029-b089-4914-a8d7-7f0ba30ccc70",
-            "label": "platformsLayer",
+            "id": "198b9934-dfdc-4eea-af19-469eb03de62b",
+            "label": "snowGroundLayer",
             "list": [
                 {
-                    "prefabId": "63daf903-5c36-41cd-b88d-24184d904e82",
-                    "id": "2e537fad-17b1-4024-8d3c-0e024871c2ce",
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "08accc42-4373-4f21-bc98-e2b3a70b3672",
                     "unlock": [
                         "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "tintTopLeft",
-                        "tintTopRight",
-                        "tintBottomLeft",
-                        "tintBottomRight"
+                        "y"
                     ],
-                    "label": "platformPrefab",
-                    "scope": "METHOD",
-                    "x": 1220,
-                    "y": 1185,
-                    "scaleX": 3.9,
-                    "scaleY": 1,
-                    "tintTopLeft": "#755404",
-                    "tintTopRight": "#755404",
-                    "tintBottomLeft": "#755404",
-                    "tintBottomRight": "#755404"
+                    "label": "SnowGround2",
+                    "x": -265,
+                    "y": 1195
                 },
                 {
-                    "prefabId": "63daf903-5c36-41cd-b88d-24184d904e82",
-                    "id": "0bd100e5-dc15-4471-aa92-9eb998e4c84b",
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "f3c26128-a13c-4aa8-9fe3-0f9417ccd829",
                     "unlock": [
                         "x",
                         "y",
-                        "scaleX",
-                        "scaleY",
-                        "tintTopLeft",
-                        "tintTopRight",
-                        "tintBottomLeft",
-                        "tintBottomRight"
+                        "flipX",
+                        "flipY"
                     ],
-                    "label": "platformPrefab_1",
-                    "scope": "METHOD",
-                    "x": 1200,
-                    "y": 1217,
-                    "scaleX": 4,
-                    "scaleY": 1,
-                    "tintTopLeft": "#755404",
-                    "tintTopRight": "#755404",
-                    "tintBottomLeft": "#755404",
-                    "tintBottomRight": "#755404"
+                    "label": "SnowGround_1",
+                    "x": -140,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
                 },
                 {
-                    "prefabId": "63daf903-5c36-41cd-b88d-24184d904e82",
-                    "id": "12f526d2-ea7d-4182-91a2-98e26c07b5e3",
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "94abf8d3-ed50-41c7-9fa5-e62ec66f5be1",
                     "unlock": [
                         "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "tintTopLeft",
-                        "tintTopRight",
-                        "tintBottomLeft",
-                        "tintBottomRight"
+                        "y"
                     ],
-                    "label": "platformPrefab_2",
-                    "scope": "METHOD",
-                    "x": 1240,
-                    "y": 1157,
-                    "scaleX": 3.8,
-                    "scaleY": 1,
-                    "tintTopLeft": "#755404",
-                    "tintTopRight": "#755404",
-                    "tintBottomLeft": "#755404",
-                    "tintBottomRight": "#755404"
+                    "label": "SnowGround_2",
+                    "x": -15,
+                    "y": 1195
                 },
                 {
-                    "prefabId": "63daf903-5c36-41cd-b88d-24184d904e82",
-                    "id": "17122d02-28d8-48bb-b2b5-afb911f382e0",
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "3016e095-dff0-4ba9-a8a2-f7f17b2a7b47",
                     "unlock": [
                         "x",
                         "y",
-                        "tintTopLeft",
-                        "tintTopRight",
-                        "tintBottomLeft",
-                        "tintBottomRight",
-                        "scaleX",
-                        "scaleY"
+                        "flipX",
+                        "flipY"
                     ],
-                    "label": "platformPrefab_3",
-                    "scope": "METHOD",
-                    "x": 1000,
-                    "y": 1249,
-                    "scaleX": 5,
-                    "scaleY": 1,
-                    "tintTopLeft": "#155a1c",
-                    "tintTopRight": "#155a1c",
-                    "tintBottomLeft": "#155a1c",
-                    "tintBottomRight": "#155a1c"
+                    "label": "SnowGround_3",
+                    "x": 110,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "5bb29b64-43a0-4a6a-a705-712aec707eca",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_4",
+                    "x": 235,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "79e44805-f1b1-40c5-8cb1-7c9e34842e8e",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_5",
+                    "x": 610,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "eb76b260-d88a-4e48-bb54-b5e5ef651d99",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_6",
+                    "x": 485,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "fec269fa-6853-4fb0-b4e6-6ff1ac588d7d",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_7",
+                    "x": 360,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "62c43d1d-93d8-4c59-b5ae-f72522b80804",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_8",
+                    "x": 735,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "5458c005-bc90-4e33-ae66-737550679888",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_9",
+                    "x": 1360,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "1c1f1f22-26d7-497b-b11b-0d312ff04c08",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_10",
+                    "x": 1485,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "6ec54328-192a-498b-9d98-8b59a55c51c5",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_12",
+                    "x": 1235,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "dd9de618-9173-49d6-ac73-def521dd6223",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_13",
+                    "x": 1110,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "60f9e2e4-03ba-4bdc-999a-be9de90ebf13",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_14",
+                    "x": 985,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "456e9fd1-15a7-4c89-be71-d0d7ae111833",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_15",
+                    "x": 860,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "7966c1cb-e5f2-47b5-9312-ad1138c7cd46",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_11",
+                    "x": 1585,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "f2732907-d20a-4506-9564-95308f1597c8",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_16",
+                    "x": 2710,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "605cfb9d-1785-4083-b2a2-2acd00b4d0f3",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_17",
+                    "x": 2835,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "d15468c7-aef4-4062-be06-e58186275ad9",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_18",
+                    "x": 2960,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "37f24b6a-1c54-494a-9311-e93e43584873",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_22",
+                    "x": 2585,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "cecdc0ab-18e4-4eab-96c1-4936c7cd97c5",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_23",
+                    "x": 2210,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "e4606694-21b7-4318-b074-90e784596fc8",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_24",
+                    "x": 2335,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "02c98d6e-6f4e-4b27-9e6b-4bd566f55fd8",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_25",
+                    "x": 2460,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "02b766ac-370e-4eeb-a5ce-440a41fff4bd",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_26",
+                    "x": 2085,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "c1464583-fa2d-4146-8536-f7b4c0207d86",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_27",
+                    "x": 1960,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "d39ac912-bbc9-453e-9a0f-9d13e7a79672",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "SnowGround_28",
+                    "x": 1835,
+                    "y": 1195
+                },
+                {
+                    "prefabId": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+                    "id": "ddd71c6b-7442-4779-87b7-52aa7340c89a",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "flipX",
+                        "flipY"
+                    ],
+                    "label": "SnowGround_29",
+                    "x": 1710,
+                    "y": 1195,
+                    "flipX": false,
+                    "flipY": false
                 }
             ]
         },
         {
-            "prefabId": "fa5d83a0-71d2-481a-98ee-4140f839d25b",
-            "id": "00ae3b40-2b64-4b33-a5d4-2860255abd6e",
+            "type": "Layer",
+            "id": "302d114e-a582-4654-be0b-93832cb41586",
+            "label": "snowPlatformLayer",
+            "list": [
+                {
+                    "type": "ArcadeImage",
+                    "id": "ecb743db-230b-4733-9498-526158893309",
+                    "label": "snowPlatformLeft",
+                    "texture": {
+                        "key": "14"
+                    },
+                    "x": 340,
+                    "y": 900,
+                    "physicsType": 1,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
+                    "id": "a57243e5-a569-4e76-875b-3b1623a86a1c",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformMiddle",
+                    "x": 460,
+                    "y": 900
+                },
+                {
+                    "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
+                    "id": "378f753d-296e-4ec6-9bb8-fada54b3b2f7",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformRight",
+                    "x": 585,
+                    "y": 900
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "34cc138f-dc69-41af-bb5a-9b4f81c228b9",
+                    "label": "snowPlatformLeft_1",
+                    "texture": {
+                        "key": "14"
+                    },
+                    "x": 910,
+                    "y": 735,
+                    "physicsType": 1,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
+                    "id": "b2b29539-bacf-4fc9-afc6-269a58be1329",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformRight_1",
+                    "x": 1155,
+                    "y": 735
+                },
+                {
+                    "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
+                    "id": "88c8b24a-a6c3-4467-9b13-5dacb1438c9e",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformMiddle_1",
+                    "x": 1030,
+                    "y": 735
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "ed36e907-94d7-4249-9b5c-9a182622aca7",
+                    "label": "snowPlatformLeft_2",
+                    "texture": {
+                        "key": "14"
+                    },
+                    "x": 1510,
+                    "y": 925,
+                    "physicsType": 1,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
+                    "id": "ce1ef77a-3b3e-4c3d-8995-7ea49fa098f8",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformRight_2",
+                    "x": 1755,
+                    "y": 925
+                },
+                {
+                    "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
+                    "id": "1dff787b-0c76-4667-b32c-eea1ee57cf98",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformMiddle_2",
+                    "x": 1630,
+                    "y": 925
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "8876ca5b-647a-4639-bd48-1a8a30607c44",
+                    "label": "snowPlatformLeft_3",
+                    "texture": {
+                        "key": "14"
+                    },
+                    "x": 2025,
+                    "y": 725,
+                    "physicsType": 1,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
+                    "id": "c3d40183-c066-4ca8-af40-83d9c6fd1f3f",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformMiddle_3",
+                    "x": 2145,
+                    "y": 725
+                },
+                {
+                    "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
+                    "id": "ce44bd06-9041-4ddc-ab45-f2e5ac8b32c8",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformRight_3",
+                    "x": 2270,
+                    "y": 725
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "dfa3d13d-f50c-49fc-b828-e28aba884f91",
+                    "label": "snowPlatformLeft_4",
+                    "texture": {
+                        "key": "14"
+                    },
+                    "x": 2530,
+                    "y": 915,
+                    "physicsType": 1,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
+                    "id": "89aee250-04de-4b2b-9279-ca25fb0a38d2",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformRight_4",
+                    "x": 2775,
+                    "y": 915
+                },
+                {
+                    "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
+                    "id": "802cd0fa-b5c1-4c00-903e-f40072b6701e",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformMiddle_4",
+                    "x": 2650,
+                    "y": 915
+                }
+            ]
+        },
+        {
+            "prefabId": "b54d12d6-9bd3-4b02-9d06-badec2dc1039",
+            "id": "fb27aac6-7d79-4685-a1af-126402aba669",
             "unlock": [
                 "x",
                 "y",
-                "autoPlayAnimation"
+                "collideWorldBounds"
             ],
-            "label": "player",
+            "label": "swordsman",
             "scope": "CLASS",
-            "autoPlayAnimation": "left ",
-            "x": 74,
-            "y": 1210
+            "x": 16,
+            "y": 1043,
+            "collideWorldBounds": true
         },
         {
             "type": "Layer",
-            "id": "83ccf850-4747-47cc-aedd-fac3b6367c24",
-            "label": "starsLayer",
+            "id": "7c819e1c-276a-42f4-bc1e-4aefbd46d465",
+            "label": "coinsLayer",
             "scope": "CLASS",
             "list": [
                 {
-                    "prefabId": "f59d582f-09a0-433d-baae-a26995f0b0ce",
-                    "id": "96c6c430-83dc-49fa-a702-78b0bd32f19a",
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "ac1005f8-8aef-42fd-b793-90491dbf1af9",
                     "unlock": [
                         "x",
                         "y"
                     ],
-                    "label": "star",
-                    "x": 1565,
-                    "y": 1065
+                    "label": "coin_1",
+                    "x": 360,
+                    "y": 760
                 },
                 {
-                    "prefabId": "f59d582f-09a0-433d-baae-a26995f0b0ce",
-                    "id": "e6bbb949-b2e8-44d3-87c2-0151e27052a9",
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "75b4a6ec-cc22-4d6a-8426-a51bc5d8a31b",
                     "unlock": [
                         "x",
                         "y"
                     ],
-                    "label": "star_1",
-                    "x": 931,
-                    "y": 1081
+                    "label": "coin_2",
+                    "x": 560,
+                    "y": 735
                 },
                 {
-                    "prefabId": "f59d582f-09a0-433d-baae-a26995f0b0ce",
-                    "id": "87aa6c06-252b-41c1-b1cf-684b2111eb1a",
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "cee28b05-6661-4f2c-a618-0bbb98edb8d5",
                     "unlock": [
                         "x",
                         "y"
                     ],
-                    "label": "star_2",
-                    "x": 1347,
-                    "y": 1067
+                    "label": "coin_3",
+                    "x": 835,
+                    "y": 985
                 },
                 {
-                    "prefabId": "f59d582f-09a0-433d-baae-a26995f0b0ce",
-                    "id": "50c1e78e-601b-44e2-a224-7c5609f1db39",
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "f8218815-6743-4fc0-8f89-93a4858f0b98",
                     "unlock": [
                         "x",
                         "y"
                     ],
-                    "label": "star_3",
-                    "x": 1184,
-                    "y": 1066
+                    "label": "coin_4",
+                    "x": 975,
+                    "y": 620
                 },
                 {
-                    "prefabId": "f59d582f-09a0-433d-baae-a26995f0b0ce",
-                    "id": "fcc5599c-95af-4336-81a4-32fba3843d1a",
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "47dc220a-3eda-4315-9330-de86c2207342",
                     "unlock": [
                         "x",
                         "y"
                     ],
-                    "label": "star_4",
-                    "x": 446,
-                    "y": 1140
+                    "label": "coin_5",
+                    "x": 1135,
+                    "y": 640
                 },
                 {
-                    "prefabId": "f59d582f-09a0-433d-baae-a26995f0b0ce",
-                    "id": "37aa5038-3230-41ef-9191-21b832f81482",
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "db9b5550-67b2-4251-8d62-659b72c8f77b",
                     "unlock": [
                         "x",
                         "y"
                     ],
-                    "label": "star_5",
-                    "x": 695,
-                    "y": 1108
+                    "label": "coin_6",
+                    "x": 1300,
+                    "y": 1045
+                },
+                {
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "e6f0a68e-15c2-4516-8074-4b3193d149f5",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "coin_7",
+                    "x": 1605,
+                    "y": 825
+                },
+                {
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "4b859cb9-e26d-4e00-8a5d-914c78339441",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "coin_8",
+                    "x": 2020,
+                    "y": 1005
+                },
+                {
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "d101a915-e02d-4cab-81ea-0cc27acebfad",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "coin_9",
+                    "x": 2100,
+                    "y": 605
+                },
+                {
+                    "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",
+                    "id": "cf195c0d-b91b-4e5e-a3d9-e65a8877e1ce",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "coin_10",
+                    "x": 2630,
+                    "y": 780
                 }
             ]
         },
         {
             "type": "Layer",
-            "id": "cc93994a-4f0f-40e2-b842-b05dcb529a98",
-            "label": "bombsLayer",
+            "id": "1bad4837-c788-4105-9c61-06fb81c231dc",
+            "label": "snowballsLayer",
             "scope": "CLASS"
         },
         {
@@ -227,87 +710,119 @@
             "id": "83c5528f-816d-48ea-954f-5fefd5b6b3f6",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "tintFill",
+                "tintTopLeft",
+                "tintTopRight",
+                "tintBottomLeft",
+                "tintBottomRight",
+                "fontSize",
+                "fontFamily"
             ],
             "label": "scoreText",
             "scope": "CLASS",
-            "x": 46,
-            "y": 19
-        },
-        {
-            "type": "Image",
-            "id": "f7d45bbc-d8df-4599-80ce-c5b966cbfd1c",
-            "label": "player0",
-            "texture": {
-                "key": "player",
-                "frame": 0
-            },
-            "x": 371,
-            "y": 1209
+            "x": 20,
+            "y": 995,
+            "tintTopLeft": "#ded607",
+            "tintTopRight": "#ded607",
+            "tintBottomLeft": "#ded607",
+            "tintBottomRight": "#ded607",
+            "tintFill": true,
+            "fontFamily": "Courier",
+            "fontSize": "40px"
         }
     ],
     "plainObjects": [
         {
-            "id": "6c53997e-9aa5-46d4-a127-07e30a36b84d",
-            "type": "Collider",
-            "label": "player_platforms_collider",
-            "scope": "METHOD",
-            "object1": "player",
-            "object2": "platformsLayer.list"
-        },
-        {
-            "id": "bb961972-3a45-4de5-83ef-5f38b21bcc5d",
+            "id": "63fb4444-e234-4996-8933-3e497249f860",
             "type": "Keyboard.Key",
-            "label": "leftKey",
-            "keyCode": "LEFT"
-        },
-        {
-            "id": "a786c94e-4e50-4caa-84b4-b4862112aeee",
-            "type": "Keyboard.Key",
-            "label": "rightKey",
+            "label": "runRight",
             "keyCode": "RIGHT"
         },
         {
-            "id": "b8b96c4d-37e1-496e-b509-5713a0927505",
+            "id": "972e0b9a-c40f-48cf-9c7e-7d24032c16d9",
             "type": "Keyboard.Key",
-            "label": "upKey",
+            "label": "jump",
             "keyCode": "UP"
         },
         {
-            "id": "1a398d5e-829f-4035-b25a-f47dd5e68cd9",
-            "type": "Collider",
-            "label": "stars_platforms_collider",
-            "scope": "METHOD",
-            "object1": "starsLayer.list",
-            "object2": "platformsLayer.list"
+            "id": "46f1cc98-b118-4017-90de-9cae3c0a7c46",
+            "type": "Keyboard.Key",
+            "label": "runLeft",
+            "keyCode": "LEFT"
         },
         {
-            "id": "d918239d-fd1f-4089-8389-31a162773f1e",
+            "id": "8780fe06-c811-4992-ab67-11611882044b",
+            "type": "Keyboard.Key",
+            "label": "attackKey"
+        },
+        {
+            "id": "80301928-25f4-47a3-94a8-724eea2d3a32",
             "type": "Collider",
-            "label": "player_stars_collider",
+            "label": "swordsman_snowGround_collider",
             "scope": "METHOD",
-            "object1": "player",
-            "object2": "starsLayer",
+            "object1": "swordsman",
+            "object2": "snowGroundLayer.list"
+        },
+        {
+            "id": "10522d5a-0710-41cb-905b-f73705f38765",
+            "type": "Collider",
+            "label": "swordsman_snowPlatforms_collider",
+            "scope": "LOCAL",
+            "object1": "swordsman",
+            "object2": "snowPlatformLayer.list"
+        },
+        {
+            "id": "cab95d85-65c7-443b-a70e-a55276f90944",
+            "type": "Collider",
+            "label": "coins_snowGround_collider",
+            "scope": "METHOD",
+            "object1": "coinsLayer.list",
+            "object2": "snowGroundLayer.list"
+        },
+        {
+            "id": "02f30ad9-76b9-420a-b215-6eaf862454e8",
+            "type": "Collider",
+            "label": "coins_snowPlatforms_collider",
+            "scope": "METHOD",
+            "object1": "coinsLayer.list",
+            "object2": "snowPlatformLayer.list"
+        },
+        {
+            "id": "d083b7ac-56c2-4b58-8ebb-0f842462852d",
+            "type": "Collider",
+            "label": "swordsman_coins_collider",
+            "scope": "METHOD",
+            "object1": "swordsman",
+            "object2": "coinsLayer.list",
             "overlapOnly": true,
-            "collideCallback": "this.collectStar as any",
-            "callbackContext": "this "
+            "collideCallback": "this.collectCoins as any",
+            "callbackContext": "this"
         },
         {
-            "id": "b9e924fa-50b7-453e-a21e-689fd9031944",
+            "id": "9c131e16-eae3-4963-ab33-6fb466e0c6c3",
             "type": "Collider",
-            "label": "bombs_platforms_collider",
+            "label": "snowballs_snowGround_collider",
             "scope": "METHOD",
-            "object1": "bombsLayer.list",
-            "object2": "platformsLayer.list"
+            "object1": "snowballsLayer.list",
+            "object2": "snowGroundLayer.list"
         },
         {
-            "id": "a67e339b-9722-4147-b757-0fe9d3435c3c",
+            "id": "0640a299-d61f-4206-a69e-e79e20c7a69f",
             "type": "Collider",
-            "label": "player_bombs_collider",
+            "label": "snowballs_snowPlatforms_collider",
             "scope": "METHOD",
-            "object1": "player",
-            "object2": "bombsLayer.list",
-            "collideCallback": "this.hitBomb as any",
+            "object1": "snowballsLayer.list",
+            "object2": "snowPlatformLayer.list"
+        },
+        {
+            "id": "8935f6b4-3cf9-48bb-b824-9df31c8488f6",
+            "type": "Collider",
+            "label": "swordsman_snowballs_collider",
+            "scope": "METHOD",
+            "object1": "swordsman",
+            "object2": "snowballsLayer.list",
+            "collideCallback": "this.hitSnowball as any",
             "callbackContext": "this"
         }
     ],
@@ -320,11 +835,48 @@
     "lists": [
         {
             "id": "c67153b0-68b7-4c3c-8954-d1a06185ee2a",
-            "label": "platforms ",
+            "label": "platforms "
+        },
+        {
+            "id": "e0cd1e7d-b123-49a2-9bd4-b0c0a69e1276",
+            "label": "snowGround",
             "objectIds": [
-                "12f526d2-ea7d-4182-91a2-98e26c07b5e3",
-                "0bd100e5-dc15-4471-aa92-9eb998e4c84b",
-                "2e537fad-17b1-4024-8d3c-0e024871c2ce"
+                "08accc42-4373-4f21-bc98-e2b3a70b3672",
+                "ddd71c6b-7442-4779-87b7-52aa7340c89a",
+                "d39ac912-bbc9-453e-9a0f-9d13e7a79672",
+                "c1464583-fa2d-4146-8536-f7b4c0207d86",
+                "02b766ac-370e-4eeb-a5ce-440a41fff4bd",
+                "02c98d6e-6f4e-4b27-9e6b-4bd566f55fd8",
+                "e4606694-21b7-4318-b074-90e784596fc8",
+                "cecdc0ab-18e4-4eab-96c1-4936c7cd97c5",
+                "37f24b6a-1c54-494a-9311-e93e43584873",
+                "d15468c7-aef4-4062-be06-e58186275ad9",
+                "605cfb9d-1785-4083-b2a2-2acd00b4d0f3",
+                "f2732907-d20a-4506-9564-95308f1597c8",
+                "7966c1cb-e5f2-47b5-9312-ad1138c7cd46",
+                "456e9fd1-15a7-4c89-be71-d0d7ae111833",
+                "60f9e2e4-03ba-4bdc-999a-be9de90ebf13",
+                "dd9de618-9173-49d6-ac73-def521dd6223",
+                "6ec54328-192a-498b-9d98-8b59a55c51c5",
+                "1c1f1f22-26d7-497b-b11b-0d312ff04c08",
+                "5458c005-bc90-4e33-ae66-737550679888",
+                "62c43d1d-93d8-4c59-b5ae-f72522b80804",
+                "fec269fa-6853-4fb0-b4e6-6ff1ac588d7d",
+                "eb76b260-d88a-4e48-bb54-b5e5ef651d99",
+                "79e44805-f1b1-40c5-8cb1-7c9e34842e8e",
+                "5bb29b64-43a0-4a6a-a705-712aec707eca",
+                "3016e095-dff0-4ba9-a8a2-f7f17b2a7b47",
+                "94abf8d3-ed50-41c7-9fa5-e62ec66f5be1",
+                "f3c26128-a13c-4aa8-9fe3-0f9417ccd829"
+            ]
+        },
+        {
+            "id": "b8ab5043-4aef-4ed5-b72c-08db0154613d",
+            "label": "snowPlatforms",
+            "objectIds": [
+                "ecb743db-230b-4733-9498-526158893309",
+                "378f753d-296e-4ec6-9bb8-fada54b3b2f7",
+                "a57243e5-a569-4e76-875b-3b1623a86a1c"
             ]
         }
     ]

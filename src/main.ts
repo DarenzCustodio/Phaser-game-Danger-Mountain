@@ -14,12 +14,15 @@ const config: Types.Core.GameConfig = {
 
     
     type: Phaser.AUTO,
-    width: 2000,
-    height: 1250,
+    width: 3000,
+    height: 2000,
     parent: 'game-container',
-    backgroundColor: '#028af8',
+    backgroundColor: 0x27ae60,
     scale: {
-        mode: Phaser.Scale.FIT,
+        
+
+        // mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     physics: {
         default: "arcade", 
@@ -35,10 +38,10 @@ const config: Types.Core.GameConfig = {
         Boot,
         Preloader,
         MainMenu,
+        Level,
         Controls,
-        Level, 
-        PlayerSelector  
-    ]
+        PlayerSelector 
+    ],
 };
 
 export default new Game(config);

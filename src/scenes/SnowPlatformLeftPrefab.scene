@@ -1,5 +1,5 @@
 {
-    "id": "e3118d58-44f4-4419-8598-d1f948d49d4e",
+    "id": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -8,23 +8,24 @@
         "preloadPackFiles": [],
         "createMethodName": "",
         "compilerOutputLanguage": "TYPE_SCRIPT",
-        "borderWidth": 920
+        "borderX": -200,
+        "borderY": 250,
+        "borderWidth": 3210,
+        "borderHeight": 1000
     },
     "displayList": [
         {
             "type": "ArcadeImage",
-            "id": "6fc975ac-1258-4742-b9a3-724ff36a1f4a",
-            "label": "bomb",
+            "id": "881515a0-e28c-434a-80ba-b7461663809a",
+            "label": "14",
             "texture": {
-                "key": "bomb"
+                "key": "14"
             },
-            "x": 371,
-            "y": 229,
-            "body.bounce.x": 1,
-            "body.bounce.y": 1,
-            "collideWorldBounds": true,
-            "body.width": 14,
-            "body.height": 14
+            "x": 384,
+            "y": 241,
+            "physicsType": 1,
+            "body.width": 128,
+            "body.height": 93
         }
     ],
     "plainObjects": [],

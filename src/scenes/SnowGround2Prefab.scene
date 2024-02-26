@@ -1,5 +1,5 @@
 {
-    "id": "e3118d58-44f4-4419-8598-d1f948d49d4e",
+    "id": "e4e81a87-4e25-4435-9c8d-38f852909c69",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -8,23 +8,25 @@
         "preloadPackFiles": [],
         "createMethodName": "",
         "compilerOutputLanguage": "TYPE_SCRIPT",
-        "borderWidth": 920
+        "borderX": -250,
+        "borderY": 2750,
+        "borderWidth": 2750,
+        "borderHeight": 1000
     },
     "displayList": [
         {
             "type": "ArcadeImage",
-            "id": "6fc975ac-1258-4742-b9a3-724ff36a1f4a",
-            "label": "bomb",
+            "id": "e7808089-bbb6-4149-aa04-5a52b6dfc231",
+            "label": "SnowGround2",
             "texture": {
-                "key": "bomb"
+                "key": "11"
             },
-            "x": 371,
-            "y": 229,
-            "body.bounce.x": 1,
-            "body.bounce.y": 1,
-            "collideWorldBounds": true,
-            "body.width": 14,
-            "body.height": 14
+            "x": 420,
+            "y": 275,
+            "flipX": true,
+            "physicsType": 1,
+            "body.width": 128,
+            "body.height": 128
         }
     ],
     "plainObjects": [],
