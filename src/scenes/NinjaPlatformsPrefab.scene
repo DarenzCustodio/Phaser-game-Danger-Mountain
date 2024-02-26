@@ -1,0 +1,705 @@
+{
+    "id": "3236690c-a5ff-435d-8806-6d2bd9dae0ea",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 6000,
+        "borderHeight": 1250
+    },
+    "displayList": [
+        {
+            "type": "Layer",
+            "id": "eec1ec79-3dee-4ed9-8990-85ded32db1af",
+            "label": "layer_1",
+            "list": [
+                {
+                    "type": "ArcadeImage",
+                    "id": "77fa9274-78c3-4ca6-8510-bfe9e1e5d1c7",
+                    "label": "p10",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 75.95719909667969,
+                    "y": 1197.9825439453125,
+                    "physicsType": 1,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "8661f0b6-210e-4b6c-a682-480a316bab45",
+                    "label": "p30",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 207,
+                    "y": 1196,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "70caa0c1-a501-4122-8445-3ddb1b6d5090",
+                    "label": "p1",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 432.0186767578125,
+                    "y": 1241.0213623046875,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "1981825c-54df-49ac-b311-b712c8cdac7c",
+                    "label": "_1",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 452.0614929199219,
+                    "y": 1197.038818359375,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "a1cdfd78-efbf-4928-a86d-00c003da54ce",
+                    "label": "_2",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 670.891845703125,
+                    "y": 1240.0657958984375,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "ce65a31a-f92e-4584-885a-6af65f661960",
+                    "label": "_3",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 690.9346313476562,
+                    "y": 1196.083251953125,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "20f9d7fc-c52f-4ec8-89d2-ebfff0ee65fa",
+                    "label": "_4",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 914.7919921875,
+                    "y": 1242.0926513671875,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "7d60340f-c47c-462c-a9f4-9258c3bad510",
+                    "label": "_5",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 934.8347778320312,
+                    "y": 1198.110107421875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "f70d42d3-decf-48d4-9d8f-8b759cbbc078",
+                    "label": "_6",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 1898.5157470703125,
+                    "y": 1196.13232421875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "52770e0a-0a9d-4352-a252-c335bb3fa54e",
+                    "label": "_7",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 1159.63818359375,
+                    "y": 1242.0047607421875,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "bbaf59fc-a84c-42c3-8772-136d760fe908",
+                    "label": "_8",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 1169.6810302734375,
+                    "y": 1198.022216796875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "f78292fa-bff9-4312-996f-a80c32751137",
+                    "label": "_9",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 1395.69970703125,
+                    "y": 1241.0435791015625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "d9adaa3e-45ad-43cc-ba62-9232cb887332",
+                    "label": "_10",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 1634.5728759765625,
+                    "y": 1240.0880126953125,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "5917f991-b5ae-40b6-82ba-bfffe8a53872",
+                    "label": "_11",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 1415.7425537109375,
+                    "y": 1197.06103515625,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "6965990a-04d7-4c9a-9d6d-93a9471d2896",
+                    "label": "_12",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 1654.6156005859375,
+                    "y": 1196.10546875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "557ae806-7103-4fe9-b3e0-118e226cf95f",
+                    "label": "_13",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 1879.4730224609375,
+                    "y": 1240.1148681640625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "9186451b-64fd-40e5-a5e4-bd0350b84a15",
+                    "label": "_14",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 2986.156005859375,
+                    "y": 1196.1925048828125,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "80d2114d-e0dd-4fd1-aaeb-bdac187b76f5",
+                    "label": "_15",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 2237.2783203125,
+                    "y": 1240.06494140625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "04715f76-229f-43c1-a7f5-36c4f68892b5",
+                    "label": "_16",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 2258.321044921875,
+                    "y": 1196.0823974609375,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "dc987cdd-28bd-4b23-a7e7-d7f85ca509ac",
+                    "label": "_17",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 2483.33984375,
+                    "y": 1240.103759765625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "7814ffce-e67a-4b7b-8f86-ecf798104cc1",
+                    "label": "_18",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 2722.212890625,
+                    "y": 1240.148193359375,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "2327c343-0e11-4e9f-ae69-2aec8ff5591f",
+                    "label": "_19",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 2493.382568359375,
+                    "y": 1196.1212158203125,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "f73ae5ff-090d-4584-b48b-058b71654699",
+                    "label": "_20",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 2742.255859375,
+                    "y": 1197.1656494140625,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "f56339d7-046c-4f52-9168-39dd5067908a",
+                    "label": "_21",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 2966.113037109375,
+                    "y": 1241.175048828125,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "de257163-e1e6-4d6f-92b1-f0cac65ca9ac",
+                    "label": "_22",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 3311.714599609375,
+                    "y": 1238.484619140625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "920abef2-0e7b-4590-8c62-467e9aa241fe",
+                    "label": "_23",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 3639.77587890625,
+                    "y": 1237.5234375,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "bed5ede7-7ba8-473b-bd50-28fccb0b5110",
+                    "label": "_24",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 3659.81884765625,
+                    "y": 1193.5408935546875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "0b406fd3-cf2b-43df-8b84-2abf41bde307",
+                    "label": "_25",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 3888.649169921875,
+                    "y": 1236.56787109375,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "6e463550-02cd-46d3-996d-6a39203e2570",
+                    "label": "_26",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 3908.69189453125,
+                    "y": 1192.5853271484375,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "9515fefa-ac42-4acc-9aff-e918fcb45c88",
+                    "label": "_27",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 4132.54931640625,
+                    "y": 1236.5947265625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "badf52a0-c5c6-462b-91f7-794823e64e13",
+                    "label": "_28",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 4152.59228515625,
+                    "y": 1192.6121826171875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "68819a21-edf8-4a6c-aa63-6622d3112fb0",
+                    "label": "_29",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 4389.3955078125,
+                    "y": 1241.5068359375,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "0cbcde76-1376-4572-bbd6-8cf001ff75ff",
+                    "label": "_30",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 4627.45703125,
+                    "y": 1241.545654296875,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "b61d38da-1a65-4714-a790-ce3cd12fd0dc",
+                    "label": "_31",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 4404.4384765625,
+                    "y": 1196.5242919921875,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "78ab3410-ed17-46ed-9851-3e102098e511",
+                    "label": "_32",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 3332.75732421875,
+                    "y": 1194.5020751953125,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "6373353c-8c8f-41fe-a1f0-21529e6d4a5b",
+                    "label": "_33",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 4633.5,
+                    "y": 1195.5631103515625,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "8e07b710-c8ea-41f0-a395-ec3d4546772d",
+                    "label": "_34",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 4862.330078125,
+                    "y": 1238.590087890625,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "7b42fadd-226d-46db-a5f8-cd53d376d29c",
+                    "label": "_35",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 4882.373046875,
+                    "y": 1194.6075439453125,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "a377c8f9-d7f3-4391-b1c6-27ebc067842f",
+                    "label": "_36",
+                    "texture": {
+                        "key": "1",
+                        "frame": 0
+                    },
+                    "x": 5106.23046875,
+                    "y": 1238.616943359375,
+                    "originX": 1.3434156273248687,
+                    "originY": 0.8436137740953171,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "b9c6ef97-9ac8-4a2d-af1e-2bb64b3cfc7f",
+                    "label": "_37",
+                    "texture": {
+                        "key": "3",
+                        "frame": 0
+                    },
+                    "x": 5126.27294921875,
+                    "y": 1194.6343994140625,
+                    "ArcadeComponent.active": true,
+                    "physicsType": 1,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 128
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

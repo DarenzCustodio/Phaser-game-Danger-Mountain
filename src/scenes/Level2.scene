@@ -1,0 +1,416 @@
+{
+    "id": "416c07ff-77a0-4e6c-a2fc-faae554c5df9",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level2",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 6000,
+        "borderHeight": 1250
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "87ff9ae2-dfc1-42c5-8fba-830a7eb9867e",
+            "label": "bG",
+            "texture": {
+                "key": "BG"
+            },
+            "x": 546,
+            "y": 372,
+            "scaleX": 6,
+            "scaleY": 2
+        },
+        {
+            "prefabId": "7cf61d61-fde8-448f-84f0-08fbd08ec4fd",
+            "id": "84f24c1d-a56c-41d0-8d35-857b2fcff4ff",
+            "unlock": [
+                "x",
+                "y",
+                "collideWorldBounds",
+                "up",
+                "down",
+                "left",
+                "right",
+                "pushable",
+                "body.bounce.x",
+                "body.bounce.y"
+            ],
+            "label": "idle_ninja0",
+            "scope": "CLASS",
+            "x": 50,
+            "y": 1024,
+            "body.bounce.x": 0,
+            "body.bounce.y": 0,
+            "collideWorldBounds": true,
+            "up": true,
+            "down": true,
+            "left": true,
+            "right": true,
+            "pushable": true
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "58b92b51-3fdf-42d2-bc08-591ede5419e4",
+            "label": "monedaP0",
+            "texture": {
+                "key": "MonedaP",
+                "frame": 0
+            },
+            "x": 585,
+            "y": 1018,
+            "collideWorldBounds": true,
+            "body.width": 80,
+            "body.height": 16
+        },
+        {
+            "type": "Image",
+            "id": "502f8a58-2329-4cae-a88b-0dd1d0a832cb",
+            "label": "cactus__1_0",
+            "texture": {
+                "key": "Cactus (1)",
+                "frame": 0
+            },
+            "x": 1019,
+            "y": 1022,
+            "scaleX": 2,
+            "scaleY": 2
+        },
+        {
+            "type": "Image",
+            "id": "6d76353f-6526-4cb7-9933-9ffee9a093c8",
+            "label": "cactus__2_0",
+            "texture": {
+                "key": "Cactus (2)",
+                "frame": 0
+            },
+            "x": 2561,
+            "y": 1060,
+            "scaleX": 3,
+            "scaleY": 3
+        },
+        {
+            "type": "Image",
+            "id": "c32c2a83-0f15-4fe7-8c7c-d08cb94722d3",
+            "label": "bush__1_0",
+            "texture": {
+                "key": "Bush (1)",
+                "frame": 0
+            },
+            "x": -522,
+            "y": 600,
+            "scaleX": 10,
+            "scaleY": 10
+        },
+        {
+            "type": "Image",
+            "id": "163a4fbb-70fd-4b08-9d30-e6174dc1f417",
+            "label": "skeleton0",
+            "texture": {
+                "key": "Skeleton",
+                "frame": 0
+            },
+            "x": 2275,
+            "y": 558,
+            "scaleX": 3,
+            "scaleY": 3,
+            "angle": -10
+        },
+        {
+            "prefabId": "3236690c-a5ff-435d-8806-6d2bd9dae0ea",
+            "id": "479d6484-bff9-41ad-a14e-04a2c556bee0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "layer_1"
+        },
+        {
+            "type": "Layer",
+            "id": "4a0447fd-dc29-476a-91c7-88a9c21fac8e",
+            "label": "gemlayer",
+            "scope": "METHOD",
+            "list": [
+                {
+                    "type": "ArcadeImage",
+                    "id": "59d9b880-3296-49a6-bd3d-645748d57f38",
+                    "label": "monedaR0",
+                    "texture": {
+                        "key": "MonedaR",
+                        "frame": 0
+                    },
+                    "x": 1061,
+                    "y": 692,
+                    "collideWorldBounds": true,
+                    "body.width": 80,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "dc993bda-9e2e-4511-9a22-869b9fb2699d",
+                    "label": "monedaR4",
+                    "texture": {
+                        "key": "MonedaR",
+                        "frame": 4
+                    },
+                    "x": 1157,
+                    "y": 691,
+                    "collideWorldBounds": true,
+                    "body.width": 80,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "56af4a1d-c963-4c4c-a4c9-c8bd5b0dd2f8",
+                    "label": "monedaR",
+                    "texture": {
+                        "key": "MonedaR",
+                        "frame": 0
+                    },
+                    "x": 1279,
+                    "y": 696,
+                    "collideWorldBounds": true,
+                    "body.width": 80,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "41b0f688-4fa6-4629-8988-f0a66f8b2811",
+                    "label": "spr_coin_azu0",
+                    "texture": {
+                        "key": "spr_coin_azu",
+                        "frame": 0
+                    },
+                    "x": 405,
+                    "y": 1020,
+                    "collideWorldBounds": true,
+                    "body.width": 64,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "ed74a393-b0ba-4a85-b1f2-6919fcf1c9ea",
+                    "label": "spr_coin_strip40",
+                    "texture": {
+                        "key": "spr_coin_strip4",
+                        "frame": 0
+                    },
+                    "x": 767,
+                    "y": 1010,
+                    "collideWorldBounds": true,
+                    "body.width": 64,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "ce54c96f-5440-427a-ad42-07e2cbfd0cc9",
+                    "label": "monedaR_1",
+                    "texture": {
+                        "key": "MonedaR",
+                        "frame": 0
+                    },
+                    "x": 1275,
+                    "y": 1002,
+                    "collideWorldBounds": true,
+                    "body.width": 80,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "80521bc5-fbbc-40fe-9fa5-154bcbf04b23",
+                    "label": "spr_coin_azu",
+                    "texture": {
+                        "key": "spr_coin_azu",
+                        "frame": 0
+                    },
+                    "x": 1433,
+                    "y": 995,
+                    "collideWorldBounds": true,
+                    "body.width": 64,
+                    "body.height": 16
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "69f36fd9-756c-405f-aca3-a4541f7ffbfe",
+                    "label": "spr_coin_strip",
+                    "texture": {
+                        "key": "spr_coin_strip4",
+                        "frame": 0
+                    },
+                    "x": 1833,
+                    "y": 1066,
+                    "collideWorldBounds": true,
+                    "body.width": 64,
+                    "body.height": 16
+                }
+            ]
+        },
+        {
+            "prefabId": "ab1521a3-4e4b-45f2-b989-cb5652f3547a",
+            "id": "19bf3c8f-e7f0-4502-8f11-025ff1cc7a9b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "layer_2",
+            "scope": "METHOD"
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "d091e055-fe99-4546-8f20-c621f9e96462",
+            "type": "Collider",
+            "label": "ninja_platform_collider",
+            "scope": "METHOD",
+            "object1": "idle_ninja0",
+            "object2": "layer_1.list"
+        },
+        {
+            "id": "b986f3f5-9d07-49e9-9ecd-739290bb6085",
+            "type": "Keyboard.Key",
+            "label": "right",
+            "keyCode": "RIGHT"
+        },
+        {
+            "id": "943f22a7-4149-4ba7-b243-8d1a1d85570d",
+            "type": "Keyboard.Key",
+            "label": "left",
+            "keyCode": "LEFT"
+        },
+        {
+            "id": "7b5c9641-c855-464a-8491-9d44b73c8071",
+            "type": "Keyboard.Key",
+            "label": "up",
+            "keyCode": "UP"
+        },
+        {
+            "id": "11a56cae-a376-47a9-b803-ebe63dbff724",
+            "type": "Keyboard.Key",
+            "label": "down"
+        },
+        {
+            "id": "8e8fbb6d-d1b6-420b-8ae6-e54a0d3ee4fd",
+            "type": "Keyboard.Key",
+            "label": "space"
+        },
+        {
+            "id": "44ecd70a-7b08-4c46-a29e-df1e2276fcf3",
+            "type": "Collider",
+            "label": "Gem_PlayerCollider",
+            "scope": "METHOD",
+            "object1": "idle_ninja0",
+            "object2": "gemlayer.list",
+            "overlapOnly": true,
+            "collideCallback": "this.collectGem as any",
+            "callbackContext": "this"
+        },
+        {
+            "id": "c2d0b12c-596d-47db-9226-d6e919685444",
+            "type": "Collider",
+            "label": "gem_platform_collider",
+            "scope": "METHOD",
+            "object1": "gemlayer.list",
+            "object2": "layer_1.list"
+        },
+        {
+            "id": "676792ea-aa75-44a3-846a-714997be523a",
+            "type": "Collider",
+            "label": "platform_layer2_collider",
+            "scope": "METHOD",
+            "object1": "layer_1.list",
+            "object2": "layer_2.list"
+        },
+        {
+            "id": "5b208a65-9376-4221-975e-fc67695cc599",
+            "type": "Collider",
+            "label": "ninja_layer2_collider",
+            "scope": "METHOD",
+            "object1": "idle_ninja0",
+            "object2": "layer_2.list"
+        },
+        {
+            "id": "32999bc4-8432-4e76-ade1-ff16a34592b5",
+            "type": "Collider",
+            "label": "gem_layer2_collider",
+            "scope": "METHOD",
+            "object1": "gemlayer.list",
+            "object2": "layer_2.list"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "lists": [
+        {
+            "id": "fd8af574-9f6e-4b24-bec6-338468a9e508",
+            "label": "platforms",
+            "objectIds": [
+                "0aa6766f-a19e-4c48-931a-e4b84d3cc8c7",
+                "1447f841-9328-4e48-ac90-34d1f9748449",
+                "95a26d0c-eff7-485a-a7b0-ada207e26a1d",
+                "77fa9274-78c3-4ca6-8510-bfe9e1e5d1c7",
+                "70caa0c1-a501-4122-8445-3ddb1b6d5090",
+                "8661f0b6-210e-4b6c-a682-480a316bab45",
+                "1981825c-54df-49ac-b311-b712c8cdac7c",
+                "a1cdfd78-efbf-4928-a86d-00c003da54ce",
+                "ce65a31a-f92e-4584-885a-6af65f661960",
+                "b9c6ef97-9ac8-4a2d-af1e-2bb64b3cfc7f",
+                "a377c8f9-d7f3-4391-b1c6-27ebc067842f",
+                "7b42fadd-226d-46db-a5f8-cd53d376d29c",
+                "8e07b710-c8ea-41f0-a395-ec3d4546772d",
+                "6373353c-8c8f-41fe-a1f0-21529e6d4a5b",
+                "78ab3410-ed17-46ed-9851-3e102098e511",
+                "b61d38da-1a65-4714-a790-ce3cd12fd0dc",
+                "0cbcde76-1376-4572-bbd6-8cf001ff75ff",
+                "68819a21-edf8-4a6c-aa63-6622d3112fb0",
+                "badf52a0-c5c6-462b-91f7-794823e64e13",
+                "9515fefa-ac42-4acc-9aff-e918fcb45c88",
+                "6e463550-02cd-46d3-996d-6a39203e2570",
+                "0b406fd3-cf2b-43df-8b84-2abf41bde307",
+                "bed5ede7-7ba8-473b-bd50-28fccb0b5110",
+                "920abef2-0e7b-4590-8c62-467e9aa241fe",
+                "de257163-e1e6-4d6f-92b1-f0cac65ca9ac",
+                "f56339d7-046c-4f52-9168-39dd5067908a",
+                "f73ae5ff-090d-4584-b48b-058b71654699",
+                "2327c343-0e11-4e9f-ae69-2aec8ff5591f",
+                "7814ffce-e67a-4b7b-8f86-ecf798104cc1",
+                "dc987cdd-28bd-4b23-a7e7-d7f85ca509ac",
+                "04715f76-229f-43c1-a7f5-36c4f68892b5",
+                "80d2114d-e0dd-4fd1-aaeb-bdac187b76f5",
+                "9186451b-64fd-40e5-a5e4-bd0350b84a15",
+                "557ae806-7103-4fe9-b3e0-118e226cf95f",
+                "6965990a-04d7-4c9a-9d6d-93a9471d2896",
+                "5917f991-b5ae-40b6-82ba-bfffe8a53872",
+                "d9adaa3e-45ad-43cc-ba62-9232cb887332",
+                "f78292fa-bff9-4312-996f-a80c32751137",
+                "bbaf59fc-a84c-42c3-8772-136d760fe908",
+                "52770e0a-0a9d-4352-a252-c335bb3fa54e",
+                "f70d42d3-decf-48d4-9d8f-8b759cbbc078",
+                "7d60340f-c47c-462c-a9f4-9258c3bad510",
+                "20f9d7fc-c52f-4ec8-89d2-ebfff0ee65fa"
+            ],
+            "scope": "METHOD"
+        },
+        {
+            "id": "2bfc8dea-15ad-4fee-885e-d8c795f4f16f",
+            "label": "GemList",
+            "objectIds": [
+                "41b0f688-4fa6-4629-8988-f0a66f8b2811",
+                "56af4a1d-c963-4c4c-a4c9-c8bd5b0dd2f8",
+                "dc993bda-9e2e-4511-9a22-869b9fb2699d",
+                "59d9b880-3296-49a6-bd3d-645748d57f38",
+                "58b92b51-3fdf-42d2-bc08-591ede5419e4",
+                "ed74a393-b0ba-4a85-b1f2-6919fcf1c9ea",
+                "ce54c96f-5440-427a-ad42-07e2cbfd0cc9",
+                "80521bc5-fbbc-40fe-9fa5-154bcbf04b23",
+                "69f36fd9-756c-405f-aca3-a4541f7ffbfe"
+            ]
+        }
+    ]
+}

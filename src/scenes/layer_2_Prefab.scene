@@ -1,0 +1,84 @@
+{
+    "id": "ab1521a3-4e4b-45f2-b989-cb5652f3547a",
+    "settings": {
+        "createMethodName": "",
+        "preloadMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "exportClass": true,
+        "autoImport": true,
+        "generateAwakeHandler": false,
+        "compilerInsertSpaces": false,
+        "compilerTabSize": 4,
+        "borderWidth": 6000,
+        "borderHeight": 1250,
+        "borderX": 0,
+        "borderY": 0
+    },
+    "sceneType": "PREFAB",
+    "displayList": [
+        {
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "type": "Layer",
+            "id": "5f96fd43-85be-4a20-98cf-8fd386b455aa",
+            "label": "layer_2",
+            "scope": "METHOD",
+            "list": [
+                {
+                    "type": "ArcadeImage",
+                    "id": "0aa6766f-a19e-4c48-931a-e4b84d3cc8c7",
+                    "label": "p140",
+                    "texture": {
+                        "key": "14",
+                        "frame": 0
+                    },
+                    "x": 1081,
+                    "y": 776,
+                    "ArcadeComponent.active": true,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "1447f841-9328-4e48-ac90-34d1f9748449",
+                    "label": "p150",
+                    "texture": {
+                        "key": "15",
+                        "frame": 0
+                    },
+                    "x": 1205,
+                    "y": 776,
+                    "ArcadeComponent.active": true,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 93
+                },
+                {
+                    "type": "ArcadeImage",
+                    "id": "95a26d0c-eff7-485a-a7b0-ada207e26a1d",
+                    "label": "p160",
+                    "texture": {
+                        "key": "16",
+                        "frame": 0
+                    },
+                    "x": 1325,
+                    "y": 774,
+                    "ArcadeComponent.active": true,
+                    "collideWorldBounds": true,
+                    "body.width": 128,
+                    "body.height": 93
+                }
+            ],
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}
