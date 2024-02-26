@@ -8,6 +8,7 @@ import PlatformPrefab from "../gameComponents/PlatformPrefab";
 import PlayerPrefab from "../gameComponents/PlayerPrefab";
 import StarPrefab from "../gameComponents/StarPrefab";
 import ScorePrefab from "../gameComponents/ScorePrefab";
+import Prefab from "../../static/assets/Prefab";
 /* START-USER-IMPORTS */
 import BombPrefab from "../gameComponents/BombPrefab";
 /* END-USER-IMPORTS */
@@ -32,6 +33,15 @@ export default class Level extends Phaser.Scene {
 
 		// upKey
 		const upKey = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+
+		// right
+		const right = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
+
+		// left
+		const left = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
+
+		// up
+		const up = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
 
 		// raoni_dorim_mountains_day_highress_01
 		const raoni_dorim_mountains_day_highress_01 = this.add.image(1047.686500929647, 614.48876953125, "raoni-dorim-mountains-day-highress-01");
@@ -123,6 +133,40 @@ export default class Level extends Phaser.Scene {
 		// player0
 		this.add.image(371, 1209, "player", 0);
 
+		// player1
+		const player1 = new Prefab(this, 182, 1161);
+		this.add.existing(player1);
+		player1.flipX = false;
+		player1.flipY = false;
+		player1.body.collideWorldBounds = true;
+
+		// 130
+		this.add.image(645, 956, "13", 0);
+
+		// 140
+		this.add.image(768, 957, "14", 0);
+
+		// 150
+		this.add.image(892, 957, "15", 0);
+
+		// 2
+		this.add.image(1448, 953, "2");
+
+		// star_6
+		
+
+		// star_7
+		const star_7 = this.add.image(776, 872, "star");
+		star_7.angle += 1;
+
+		// star_8
+		const star_8 = this.add.image(875, 872, "star");
+		star_8.angle += 1;
+
+		// star_9
+		const star_9 = this.add.image(1443, 850, "star");
+		star_9.angle += 1;
+
 		// lists
 		const platforms_ = [platformPrefab_2, platformPrefab_1, platformPrefab];
 
@@ -141,6 +185,9 @@ export default class Level extends Phaser.Scene {
 		// player_bombs_collider
 		const player_bombs_collider = this.physics.add.collider(player, bombsLayer.list, this.hitBomb as any, undefined, this);
 
+		// knight_platforms_collider
+		this.physics.add.collider(player1, platformsLayer.list);
+
 		// player (prefab fields)
 		player.autoPlayAnimation = "left ";
 
@@ -148,9 +195,13 @@ export default class Level extends Phaser.Scene {
 		this.starsLayer = starsLayer;
 		this.bombsLayer = bombsLayer;
 		this.scoreText = scoreText;
+		this.player1 = player1;
 		this.leftKey = leftKey;
 		this.rightKey = rightKey;
 		this.upKey = upKey;
+		this.right = right;
+		this.left = left;
+		this.up = up;
 		this.platforms_ = platforms_;
 
 		this.events.emit("scene-awake");
@@ -160,9 +211,13 @@ export default class Level extends Phaser.Scene {
 	private starsLayer!: Phaser.GameObjects.Layer;
 	private bombsLayer!: Phaser.GameObjects.Layer;
 	private scoreText!: ScorePrefab;
+	private player1!: Prefab;
 	private leftKey!: Phaser.Input.Keyboard.Key;
 	private rightKey!: Phaser.Input.Keyboard.Key;
 	private upKey!: Phaser.Input.Keyboard.Key;
+	private right!: Phaser.Input.Keyboard.Key;
+	private left!: Phaser.Input.Keyboard.Key;
+	private up!: Phaser.Input.Keyboard.Key;
 	private platforms_!: PlatformPrefab[];
 
 	/* START-USER-CODE */
@@ -181,6 +236,8 @@ export default class Level extends Phaser.Scene {
             this.scene.sleep('Level').run('MainMenu')
 			this.player.setPosition(74, 1210)
         });
+
+		
 	}
 	// player
 	// const player = new PlayerPrefab(this, 74, 1210);
@@ -189,11 +246,11 @@ export default class Level extends Phaser.Scene {
 
 	private initCamera(): void {
 		this.cameras.main.setSize(this.game.scale.width, this.game.scale.height);
-		this.cameras.main.startFollow(this.player, true, 0.09, 0.09);
+		this.cameras.main.startFollow(this.player1, true, 0.09, 0.09);
 		this.cameras.main.setZoom(1.75);
 	  }
 
-	private collectStar(player: PlayerPrefab, star: StarPrefab){
+	private collectStar(player1: Prefab, star: StarPrefab){
 		star.collected();
 
 		this.scoreText.addScore(10);
@@ -207,16 +264,16 @@ export default class Level extends Phaser.Scene {
 			// 	star.resetStar();
 			// }
 			// spawn a bomb 
-			var bombX = (this.player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+			var bombX = (this.player1.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
 
 			const bomb = new BombPrefab(this, bombX, 0);
 			this.bombsLayer.add(bomb);
 		}
 	}
 
-	private hitBomb(player: PlayerPrefab, bomb: BombPrefab){
+	private hitBomb(player: Prefab, bomb: BombPrefab){
 		this.physics.pause();
-		player.die();
+		this.player1.die();
 		this.gameOver = true;
 	}
 
@@ -241,18 +298,18 @@ export default class Level extends Phaser.Scene {
 	}
 
 	private updatePlayer() {
-		if (this.leftKey.isDown) {
-			this.player.moveLeft();
+		
+		if (this.left.isDown) {
+			this.player1.moveLeft();
 
-		} else if (this.rightKey.isDown) {
-			this.player.moveRight();
-
+		} else if (this.right.isDown) {
+			this.player1.moveRight()
 		} else {
-			this.player.stopMoving();
+			this.player1.stopMoving();
 
 		}
-		if (this.upKey.isDown && this.player.body.touching.down) {
-			this.player.jump();
+		if (this.up.isDown && (this.player.body.touching.down || this.player.body.onFloor())) {
+			this.player1.jump();
 		}
 	}
 

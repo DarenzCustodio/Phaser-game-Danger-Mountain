@@ -1,5 +1,5 @@
 import { Scene, GameObjects } from 'phaser';
-
+// import images from '.../public/assets/*.png';
 export class MainMenu extends Scene
 {
     background!: GameObjects.Image;
@@ -26,7 +26,7 @@ export class MainMenu extends Scene
 
         this.input.on('pointerdown', () => {
             console.log("clicked")
-            this.scene.sleep('MainMenu').run('Level')
+            this.scene.sleep('MainMenu').run('Level2')
         });
     }
 }
