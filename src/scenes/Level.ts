@@ -3,7 +3,7 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
+import Phaser,  { GameObjects }  from "phaser";
 import SnowGround2Prefab from "./SnowGround2Prefab";
 import SnowPlatformMiddlePrefab from "./SnowPlatformMiddlePrefab";
 import SnowPlatformRightPrefab from "./SnowPlatformRightPrefab";
@@ -17,6 +17,9 @@ import { ANIM_IDLE } from "../../static/assets/swordsman_animations";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
+
+	
+    pauseMenu!: GameObjects.Text;
 
 	constructor() {
 		super("Level");
@@ -377,15 +380,21 @@ export default class Level extends Phaser.Scene {
 		this.editorCreate();
 		this.initCamera();
 
-		this.input.on('pointerdown', () => {
-            this.scene.sleep('Level').run('MainMenu')
 			this.swordsman.setPosition(74, 1000)
 			this.swordsman.clearTint();
 			this.swordsman.play(ANIM_IDLE)
 			this.physics.resume()
-        });
 
-		
+				this.pauseMenu = this.add.text(75, 850, 'Pause Game ', {
+					fontFamily: 'Arial Black', fontSize: 15, color: '#ffffff',
+						stroke: '#000000', strokeThickness: 8,
+						align: 'center'
+					}).setOrigin(0.5)
+					.setInteractive();  
+					this.pauseMenu.on('pointerdown', () => {
+						this.scene.sleep('Level').run('PauseMenu')      
+				})
+        })
 	}
 
 	private initCamera(): void {
