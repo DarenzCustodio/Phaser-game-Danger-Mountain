@@ -53,7 +53,7 @@ export class PlayerSelector extends Scene
           // this.load.image('background', "assets/mainMenuBackground.png")
       
           this.title = this.add.text(512, 125, 'Character Selector', {
-            fontFamily: 'Arial Black', fontSize: 40, color: '#ffffff',
+            fontFamily: 'Arial Black', fontSize: 40   , color: '#ffffff',
               stroke: '#000000', strokeThickness: 8,
               align: 'center'
             }).setOrigin(0.5);

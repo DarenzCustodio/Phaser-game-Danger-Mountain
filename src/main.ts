@@ -4,7 +4,7 @@ import  Level from "./scenes/Level";
 import { MainMenu } from './scenes/MainMenu';
 import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
-
+import { PauseMenu } from './scenes/PauseMenu'
 import { Game, Types } from "phaser";
 
 
@@ -40,7 +40,8 @@ const config: Types.Core.GameConfig = {
         MainMenu,
         Level,
         Controls,
-        PlayerSelector 
+        PlayerSelector,
+        PauseMenu
     ],
 };
 
