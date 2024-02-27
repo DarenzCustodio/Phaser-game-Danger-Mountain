@@ -22,6 +22,7 @@
             "y": 229,
             "body.bounce.x": 1,
             "body.bounce.y": 1,
+            "collideWorldBounds": true,
             "body.width": 14,
             "body.height": 14
         }

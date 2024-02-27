@@ -1,5 +1,4 @@
 import { Scene, GameObjects } from 'phaser';
-// import SwordsmanPrefab from '~/gameComponents/SwordsmanPrefab';
 
 export class MainMenu extends Scene
 {
@@ -12,7 +11,7 @@ export class MainMenu extends Scene
     startGameText!: GameObjects.Text;
     playingAsText!: GameObjects.Text;
     signInText!: GameObjects.Text;
-
+    PlayerSelector!: GameObjects.Text;
 
     constructor ()
     {
@@ -49,7 +48,7 @@ export class MainMenu extends Scene
             align: 'center'
         }).setInteractive();
         this.startGameText.on('pointerdown', () => {
-            this.scene.sleep('MainMenu').run('Level')      
+            this.scene.sleep('MainMenu').run('PlayerSelector')      
         }).setOrigin(0.5);
 
         this.signInText = this.add.text(512, 525, '< Sign in >', {
@@ -89,7 +88,6 @@ export class MainMenu extends Scene
         this.leaderBoardsText.on('pointerdown', () => {
             this.scene.sleep('MainMenu').run('Controls')
         });
-
         this.settingsText = this.add.text(825, 50, '< Settings >', {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
@@ -99,13 +97,14 @@ export class MainMenu extends Scene
             this.scene.sleep('MainMenu').run('Settings')
         });
 
-     
-
-        // const swordsman = new SwordsmanPrefab(this, 16, 1043)
+             // const swordsman = new SwordsmanPrefab(this, 16, 1043)
         // this.add.existing(swordsman);
-        
 
-      
+        const backgroundMusic = this.sound.add("bgMusic");
+        console.log(backgroundMusic, "bgmusic");
+
+        backgroundMusic.play({ loop: true, volume: 0.3 });
+
     
 
         // this.input.on('pointerdown', () => {

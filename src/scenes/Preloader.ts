@@ -33,6 +33,10 @@ export class Preloader extends Scene
         this.load.setPath('assets');
 
         this.load.image('logo', 'logo.png');
+        this.load.audio({
+            key: "bgMusic",
+            url: "joshuamclean-mountain-trials.mp3",
+          });
     }
 
     create ()

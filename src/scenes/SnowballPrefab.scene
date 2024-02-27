@@ -1,0 +1,40 @@
+{
+    "id": "92dde4b2-ce1e-4613-9907-870168b95e8b",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderX": -200,
+        "borderY": 250,
+        "borderWidth": 3210,
+        "borderHeight": 1000
+    },
+    "displayList": [
+        {
+            "type": "ArcadeImage",
+            "id": "45e8c411-db2b-49a4-8778-2bfe24cdff0d",
+            "label": "snowball",
+            "texture": {
+                "key": "snowball"
+            },
+            "x": 277,
+            "y": 393,
+            "body.bounce.x": 1,
+            "body.bounce.y": 1,
+            "collideWorldBounds": true,
+            "body.width": 32,
+            "body.height": 32
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

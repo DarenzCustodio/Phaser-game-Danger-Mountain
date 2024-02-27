@@ -15,11 +15,11 @@
 		},
         "outDir": "./dist",
 		"types": [
-			"phaser"
+			"phaser",
 		]
 	},
 	"include": [
 		"src/**/*",
 		"types/**/*"
-	]
+, "static/assets/NinjaPrefab.ts"	]
 }

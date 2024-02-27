@@ -1,0 +1,50 @@
+{
+    "id": "b54d12d6-9bd3-4b02-9d06-badec2dc1039",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 2000,
+        "borderHeight": 1250
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "4e9fc631-6a9a-477d-83b9-9ae83c546936",
+            "label": "swordsman",
+            "scope": "METHOD",
+            "texture": {
+                "key": "Idle",
+                "frame": 0
+            },
+            "x": 484,
+            "y": 225,
+            "collideWorldBounds": true,
+            "body.width": 128,
+            "body.height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "automatic_idle_animation",
+            "label": "automatic_swordsman_animation",
+            "tooltip": "",
+            "defValue": "idle",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        }
+    ]
+}

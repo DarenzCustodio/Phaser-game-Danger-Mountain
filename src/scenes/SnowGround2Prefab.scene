@@ -1,0 +1,39 @@
+{
+    "id": "e4e81a87-4e25-4435-9c8d-38f852909c69",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderX": -250,
+        "borderY": 2750,
+        "borderWidth": 2750,
+        "borderHeight": 1000
+    },
+    "displayList": [
+        {
+            "type": "ArcadeImage",
+            "id": "e7808089-bbb6-4149-aa04-5a52b6dfc231",
+            "label": "SnowGround2",
+            "texture": {
+                "key": "11"
+            },
+            "x": 420,
+            "y": 275,
+            "flipX": true,
+            "physicsType": 1,
+            "body.width": 128,
+            "body.height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

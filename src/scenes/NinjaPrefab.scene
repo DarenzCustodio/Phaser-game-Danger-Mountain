@@ -1,0 +1,58 @@
+{
+    "id": "7cf61d61-fde8-448f-84f0-08fbd08ec4fd",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 6000,
+        "borderHeight": 1250
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "5e044583-b3a8-4843-bb48-b0928198d3bf",
+            "label": "idle_ninja0",
+            "scope": "CLASS",
+            "texture": {
+                "key": "idle-ninja",
+                "frame": 0
+            },
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "body.width": 240,
+            "body.height": 450
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "e2089dca-142b-428d-b05e-eefe32f119a3",
+            "type": "Collider",
+            "label": "player-platform-collider",
+            "scope": "LOCAL",
+            "object1": "idle_ninja0",
+            "object2": "platforms.list"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "ninja-animation",
+            "label": "Ninja-animation",
+            "tooltip": "",
+            "defValue": "idle-ninja",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        }
+    ]
+}

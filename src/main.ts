@@ -1,10 +1,14 @@
 import { Boot } from './scenes/Boot';
 import { Instructions } from './scenes/Instructions';
 import { Level } from './scenes/Level';
+import { Controls } from './scenes/Controls';
+import  Level from "./scenes/Level";
+import Level2 from './scenes/Level2';
 import { MainMenu } from './scenes/MainMenu';
+import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
 import {Settings} from './scenes/Settings'
-
+import { PauseMenu } from './scenes/PauseMenu'
 import { Game, Types } from "phaser";
 
 
@@ -14,19 +18,23 @@ const config: Types.Core.GameConfig = {
 
     
     type: Phaser.AUTO,
-    width: 2000,
-    height: 1250,
+    width: 3000,
+    height: 2000,
     parent: 'game-container',
-    backgroundColor: '#028af8',
+    backgroundColor: 0x27ae60,
     scale: {
-        mode: Phaser.Scale.FIT,
+        
+
+        // mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     physics: {
         default: "arcade", 
         arcade: {
             debug: false,
             gravity: {
-                y: 300
+                y: 300,
+                x: 0
             }
         }
     },
@@ -36,7 +44,10 @@ const config: Types.Core.GameConfig = {
         MainMenu,
         Instructions,
         Settings,
+        PlayerSelector,
+        PauseMenu,
         Level,
+        Level2
     ]
 };
 

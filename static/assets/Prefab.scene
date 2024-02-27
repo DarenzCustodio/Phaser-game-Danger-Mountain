@@ -1,0 +1,51 @@
+{
+    "id": "286a4beb-af08-446f-bae9-ce3e59b05178",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 2000,
+        "borderHeight": 1250
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "31aa37c9-be4e-4a8b-84d6-65e8b3f50e14",
+            "label": "player1",
+            "scope": "CLASS",
+            "texture": {
+                "key": "knight_idle",
+                "frame": 0
+            },
+            "x": 129,
+            "y": 183,
+            "scaleX": 0.2,
+            "scaleY": 0.2,
+            "body.width": 587,
+            "body.height": 707
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "automatic_animation",
+            "label": "Property",
+            "tooltip": "",
+            "defValue": "idle",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        }
+    ]
+}

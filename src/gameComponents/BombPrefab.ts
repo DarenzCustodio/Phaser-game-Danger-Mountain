@@ -20,6 +20,7 @@ export default class BombPrefab extends Phaser.Physics.Arcade.Image {
 		scene.physics.add.existing(this, false);
 		this.body.bounce.x = 1;
 		this.body.bounce.y = 1;
+		this.body.collideWorldBounds = true;
 		this.body.setSize(14, 14, false);
 
 		/* START-USER-CTR-CODE */
