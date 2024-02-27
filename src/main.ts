@@ -1,10 +1,13 @@
 import { Boot } from './scenes/Boot';
+import { Instructions } from './scenes/Instructions';
+import { Level } from './scenes/Level';
 import { Controls } from './scenes/Controls';
 import  Level from "./scenes/Level";
 import Level2 from './scenes/Level2';
 import { MainMenu } from './scenes/MainMenu';
 import { PlayerSelector } from './scenes/PlayerSelect';
 import { Preloader } from './scenes/Preloader';
+import {Settings} from './scenes/Settings'
 import { PauseMenu } from './scenes/PauseMenu'
 import { Game, Types } from "phaser";
 
@@ -39,12 +42,13 @@ const config: Types.Core.GameConfig = {
         Boot,
         Preloader,
         MainMenu,
-        Level,
-        Controls,
+        Instructions,
+        Settings,
         PlayerSelector,
         PauseMenu,
+        Level,
         Level2
-    ],
+    ]
 };
 
 export default new Game(config);
