@@ -92,6 +92,219 @@
                 "key": "9"
             },
             {
+                "url": "assets/1.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "1"
+            },
+            {
+                "url": "assets/10.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "10"
+            },
+            {
+                "url": "assets/11.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "11"
+            },
+            {
+                "url": "assets/12.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "12"
+            },
+            {
+                "url": "assets/13.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "13"
+            },
+            {
+                "url": "assets/14.png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "14"
+            },
+            {
+                "url": "assets/15.png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "15"
+            },
+            {
+                "url": "assets/16.png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "16"
+            },
+            {
+                "url": "assets/2.png",
+                "type": "image",
+                "key": "2"
+            },
+            {
+                "url": "assets/3.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "3"
+            },
+            {
+                "url": "assets/4.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "4"
+            },
+            {
+                "url": "assets/5.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "5"
+            },
+            {
+                "url": "assets/6.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "6"
+            },
+            {
+                "url": "assets/7.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "7"
+            },
+            {
+                "url": "assets/8.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "8"
+            },
+            {
+                "url": "assets/9.png",
+                "frameConfig": {
+                    "frameWidth": 110,
+                    "frameHeight": 130,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "9"
+            },
+            {
+                "url": "assets/adventure_girl.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "adventure_girl"
+            },
+            {
                 "url": "assets/animations.json",
                 "type": "animation",
                 "key": "animations"
@@ -141,6 +354,24 @@
                 "key": "background_glacial_mountains"
             },
             {
+                "url": "assets/attack_ninja.png",
+                "frameConfig": {
+                    "frameWidth": 560,
+                    "frameHeight": 510,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "attack_ninja"
+            },
+            {
+                "url": "assets/BG.png",
+                "type": "image",
+                "key": "BG"
+            },
+            {
                 "url": "assets/bomb.png",
                 "type": "image",
                 "key": "bomb"
@@ -162,6 +393,123 @@
                 },
                 "type": "spritesheet",
                 "key": "Dead"
+            },
+            {
+                "url": "assets/Bush (1).png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Bush (1)"
+            },
+            {
+                "url": "assets/Bush (2).png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Bush (2)"
+            },
+            {
+                "url": "assets/Cactus (1).png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 115,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Cactus (1)"
+            },
+            {
+                "url": "assets/Cactus (2).png",
+                "frameConfig": {
+                    "frameWidth": 70,
+                    "frameHeight": 45,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Cactus (2)"
+            },
+            {
+                "url": "assets/Cactus (3).png",
+                "frameConfig": {
+                    "frameWidth": 85,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Cactus (3)"
+            },
+            {
+                "url": "assets/climb_ninja.png",
+                "frameConfig": {
+                    "frameWidth": 300,
+                    "frameHeight": 485,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "climb_ninja"
+            },
+            {
+                "url": "assets/Crate.png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 105,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Crate"
+            },
+            {
+                "url": "assets/css_sprites.png",
+                "frameConfig": {
+                    "frameWidth": 587,
+                    "frameHeight": 707,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "css_sprites"
+            },
+            {
+                "url": "assets/dead_ninja.png",
+                "frameConfig": {
+                    "frameWidth": 495,
+                    "frameHeight": 520,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "dead_ninja"
             },
             {
                 "url": "assets/FufuSuperDino.png",
@@ -221,6 +569,115 @@
                 "key": "Jump"
             },
             {
+                "url": "assets/Grass (1).png",
+                "frameConfig": {
+                    "frameWidth": 90,
+                    "frameHeight": 70,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Grass (1)"
+            },
+            {
+                "url": "assets/Grass (2).png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 70,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Grass (2)"
+            },
+            {
+                "url": "assets/idle-ninja.png",
+                "frameConfig": {
+                    "frameWidth": 240,
+                    "frameHeight": 450,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "idle-ninja"
+            },
+            {
+                "url": "assets/idleknight.png",
+                "frameConfig": {
+                    "frameWidth": 425,
+                    "frameHeight": 620,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "idleknight"
+            },
+            {
+                "url": "assets/idleninja.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "idleninja"
+            },
+            {
+                "url": "assets/jump_ninja.png",
+                "frameConfig": {
+                    "frameWidth": 375,
+                    "frameHeight": 505,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "jump_ninja"
+            },
+            {
+                "url": "assets/MonedaP.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 20,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "MonedaP"
+            },
+            {
+                "url": "assets/MonedaR.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 20,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "MonedaR"
+            },
+            {
+                "url": "assets/ninja-animations.json",
+                "type": "animation",
+                "key": "ninja-animations"
+            },
+            {
                 "url": "assets/pixel-art-seamless-background-mountains-260nw-2242570805.webp",
                 "type": "image",
                 "key": "pixel-art-seamless-background-mountains-260nw-2242570805"
@@ -275,9 +732,87 @@
                 "key": "snowball"
             },
             {
+                "url": "assets/runknight.png",
+                "frameConfig": {
+                    "frameWidth": 400,
+                    "frameHeight": 640,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "runknight"
+            },
+            {
+                "url": "assets/Sign.png",
+                "frameConfig": {
+                    "frameWidth": 80,
+                    "frameHeight": 90,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Sign"
+            },
+            {
+                "url": "assets/SignArrow.png",
+                "frameConfig": {
+                    "frameWidth": 80,
+                    "frameHeight": 90,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "SignArrow"
+            },
+            {
+                "url": "assets/Skeleton.png",
+                "frameConfig": {
+                    "frameWidth": 150,
+                    "frameHeight": 70,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton"
+            },
+            {
                 "url": "assets/snowyMountain.png",
                 "type": "image",
                 "key": "snowyMountain"
+            },
+            {
+                "url": "assets/spr_coin_azu.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 20,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "spr_coin_azu"
+            },
+            {
+                "url": "assets/spr_coin_strip4.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 20,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "spr_coin_strip4"
             },
             {
                 "url": "assets/star.png",
@@ -301,6 +836,45 @@
                 },
                 "type": "spritesheet",
                 "key": "Walk"
+            },
+            {
+                "url": "assets/Stone.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Stone"
+            },
+            {
+                "url": "assets/StoneBlock.png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "StoneBlock"
+            },
+            {
+                "url": "assets/Tree.png",
+                "frameConfig": {
+                    "frameWidth": 300,
+                    "frameHeight": 260,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Tree"
             }
         ]
     },

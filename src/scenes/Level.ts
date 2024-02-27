@@ -394,6 +394,7 @@ export default class Level extends Phaser.Scene {
 					this.pauseMenu.on('pointerdown', () => {
 						this.scene.sleep('Level').run('PauseMenu')      
 				})
+        })
 	}
 
 	private initCamera(): void {
