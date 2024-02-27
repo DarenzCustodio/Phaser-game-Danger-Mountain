@@ -14,8 +14,6 @@ export class PauseMenu extends Scene
 
     create ()
     {
-
-
         this.quitGame = this.add.text(512, 230, 'Quit', {
             fontFamily: 'Arial Black', fontSize: 50, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,

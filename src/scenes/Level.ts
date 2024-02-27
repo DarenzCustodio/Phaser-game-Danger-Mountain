@@ -375,6 +375,14 @@ export default class Level extends Phaser.Scene {
 
 	// Write your code here
 
+	preload(){
+		this.load.setPath('assets')
+		this.load.audio({
+		  key: "coinMusic",
+		  url: "/collectCoin.mp3",
+		  });
+	}
+	
 	create() {
 		this.editorCreate();
 		this.initCamera();
@@ -393,6 +401,8 @@ export default class Level extends Phaser.Scene {
 					this.pauseMenu.on('pointerdown', () => {
 						this.scene.sleep('Level').run('PauseMenu')      
 				})
+
+		this.sound.add("coinMusic");
 	}
 
 	private initCamera(): void {
@@ -400,10 +410,11 @@ export default class Level extends Phaser.Scene {
 		this.cameras.main.startFollow(this.swordsman, true, 0.09, 0.09);
 		this.cameras.main.setZoom(1.25);
 	  }
-
+	  
 	private collectCoins(player: SwordsmanPrefab, coin: CoinPrefab){
-
+		
 		coin.collected();
+		this.sound.play('coinMusic', {volume: 1});
 
 		this.scoreText.addScore(10);
 
@@ -470,6 +481,10 @@ export default class Level extends Phaser.Scene {
 	/* END-USER-CODE */
 }
 
+
+function preload() {
+	throw new Error("Function not implemented.");
+}
 /* END OF COMPILED CODE */
 
 // You can write more code here

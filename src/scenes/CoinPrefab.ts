@@ -13,6 +13,8 @@ export default interface CoinPrefab {
 }
 
 export default class CoinPrefab extends Phaser.Physics.Arcade.Image {
+	sound: any;
+	load: any;
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
 		super(scene, x ?? 195, y ?? 325, texture || "coin3", frame);
@@ -31,6 +33,17 @@ export default class CoinPrefab extends Phaser.Physics.Arcade.Image {
 	}
 
 	/* START-USER-CODE */
+	// preload(){
+	// 	this.load.audio({
+    //         key: "coinMusic",
+    //         url: "static/assets/collectCoin.mp3",
+    //         });
+	// }
+
+	// create(){
+	// 	const coinSound = this.sound.add("coinMusic");
+	// 	coinSound.play({ loop: false });
+	// }
 
 	collected(){
 		this.disableBody(true, true);

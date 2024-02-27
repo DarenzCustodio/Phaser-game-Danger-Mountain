@@ -62,7 +62,10 @@ export class MainMenu extends Scene
         });
 
 
-      
+        const backgroundMusic = this.sound.add("bgMusic");
+        console.log(backgroundMusic, "bgmusic");
+
+        backgroundMusic.play({ loop: true, volume: 0.3 });
     
 
         // this.input.on('pointerdown', () => {
