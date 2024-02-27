@@ -1,4 +1,5 @@
 import { Scene, GameObjects } from 'phaser';
+// import SwordsmanPrefab from '~/gameComponents/SwordsmanPrefab';
 
 export class MainMenu extends Scene
 {
@@ -6,7 +7,12 @@ export class MainMenu extends Scene
     logo!: GameObjects.Image;
     title!: GameObjects.Text;
     controlsText!: GameObjects.Text;
+    leaderBoardsText!: GameObjects.Text;
+    settingsText!: GameObjects.Text;
     startGameText!: GameObjects.Text;
+    playingAsText!: GameObjects.Text;
+    signInText!: GameObjects.Text;
+
 
     constructor ()
     {
@@ -43,22 +49,61 @@ export class MainMenu extends Scene
             align: 'center'
         }).setInteractive();
         this.startGameText.on('pointerdown', () => {
-            console.log('Settings button clicked');
             this.scene.sleep('MainMenu').run('Level')      
+        }).setOrigin(0.5);
+
+        this.signInText = this.add.text(512, 525, '< Sign in >', {
+            fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 8,
+            align: 'center'
+        }).setInteractive();
+        this.signInText.on('pointerdown', () => {
+            this.scene.sleep('MainMenu').run('Controls')
+        }).setOrigin(0.5);
+
+        this.playingAsText  = this.add.text(512, 475, '< Playing as: Guest >', {
+            fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 8,
+            align: 'center'
+        }).setInteractive();
+        this.playingAsText.on('pointerdown', () => {
+            this.scene.sleep('MainMenu').run('Controls')
         }).setOrigin(0.5);
 
         
 
-        this.controlsText = this.add.text(50, 50, 'Controls', {
-            fontFamily: 'Arial', fontSize: 24, color: '#ffffff',
-            backgroundColor: '#333333',
-            padding: { x: 10, y: 5 },
+        this.controlsText = this.add.text(25, 50, '< Instructions >', {
+            fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 8,
+            align: 'center'
         }).setInteractive();
         this.controlsText.on('pointerdown', () => {
-            console.log('Settings button clicked');
-            this.scene.sleep('MainMenu').run('Controls')
-           
+            this.scene.sleep('MainMenu').run('Instructions')
         });
+
+        this.leaderBoardsText = this.add.text(410, 50, '< Leaderboards >', {
+            fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 8,
+            align: 'center'
+        }).setInteractive();
+        this.leaderBoardsText.on('pointerdown', () => {
+            this.scene.sleep('MainMenu').run('Controls')
+        });
+
+        this.settingsText = this.add.text(825, 50, '< Settings >', {
+            fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 8,
+            align: 'center'
+        }).setInteractive();
+        this.settingsText.on('pointerdown', () => {
+            this.scene.sleep('MainMenu').run('Settings')
+        });
+
+     
+
+        // const swordsman = new SwordsmanPrefab(this, 16, 1043)
+        // this.add.existing(swordsman);
+        
 
       
     

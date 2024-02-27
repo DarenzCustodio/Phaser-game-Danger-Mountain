@@ -1,8 +1,9 @@
 import { Boot } from './scenes/Boot';
-import { Controls } from './scenes/Controls';
+import { Instructions } from './scenes/Instructions';
 import { Level } from './scenes/Level';
 import { MainMenu } from './scenes/MainMenu';
 import { Preloader } from './scenes/Preloader';
+import {Settings} from './scenes/Settings'
 
 import { Game, Types } from "phaser";
 
@@ -33,8 +34,9 @@ const config: Types.Core.GameConfig = {
         Boot,
         Preloader,
         MainMenu,
-        Controls,
-        Level
+        Instructions,
+        Settings,
+        Level,
     ]
 };
 
