@@ -17,6 +17,11 @@
                 "key": "11"
             },
             {
+                "url": "assets/snow11.png",
+                "type": "image",
+                "key": "snow11"
+            },
+            {
                 "url": "assets/12.png",
                 "type": "image",
                 "key": "12"
@@ -32,14 +37,29 @@
                 "key": "14"
             },
             {
+                "url": "assets/snow14.png",
+                "type": "image",
+                "key": "snow14"
+            },
+            {
                 "url": "assets/15.png",
                 "type": "image",
                 "key": "15"
             },
             {
+                "url": "assets/snow15.png",
+                "type": "image",
+                "key": "snow15"
+            },
+            {
                 "url": "assets/16.png",
                 "type": "image",
                 "key": "16"
+            },
+            {
+                "url": "assets/snow16.png",
+                "type": "image",
+                "key": "snow16"
             },
             {
                 "url": "assets/17.png",

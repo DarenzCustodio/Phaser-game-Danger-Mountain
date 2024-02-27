@@ -2,8 +2,7 @@
 // You can write more code here
 
 /* START OF COMPILED CODE */
-
-import Phaser,  { GameObjects }  from "phaser";
+import Phaser, {GameObjects} from "phaser";
 import SnowGround2Prefab from "./SnowGround2Prefab";
 import SnowPlatformMiddlePrefab from "./SnowPlatformMiddlePrefab";
 import SnowPlatformRightPrefab from "./SnowPlatformRightPrefab";
@@ -189,7 +188,7 @@ export default class Level extends Phaser.Scene {
 		const snowPlatformLayer = this.add.layer();
 
 		// snowPlatformLeft
-		const snowPlatformLeft = this.physics.add.staticImage(340, 900, "14");
+		const snowPlatformLeft = this.physics.add.staticImage(340, 900, "snow14");
 		snowPlatformLeft.body.setSize(128, 93, false);
 		snowPlatformLayer.add(snowPlatformLeft);
 
@@ -202,7 +201,7 @@ export default class Level extends Phaser.Scene {
 		snowPlatformLayer.add(snowPlatformRight);
 
 		// snowPlatformLeft_1
-		const snowPlatformLeft_1 = this.physics.add.staticImage(910, 735, "14");
+		const snowPlatformLeft_1 = this.physics.add.staticImage(910, 735, "snow14");
 		snowPlatformLeft_1.body.setSize(128, 93, false);
 		snowPlatformLayer.add(snowPlatformLeft_1);
 
@@ -215,7 +214,7 @@ export default class Level extends Phaser.Scene {
 		snowPlatformLayer.add(snowPlatformMiddle_1);
 
 		// snowPlatformLeft_2
-		const snowPlatformLeft_2 = this.physics.add.staticImage(1510, 925, "14");
+		const snowPlatformLeft_2 = this.physics.add.staticImage(1510, 925, "snow14");
 		snowPlatformLeft_2.body.setSize(128, 93, false);
 		snowPlatformLayer.add(snowPlatformLeft_2);
 
@@ -228,7 +227,7 @@ export default class Level extends Phaser.Scene {
 		snowPlatformLayer.add(snowPlatformMiddle_2);
 
 		// snowPlatformLeft_3
-		const snowPlatformLeft_3 = this.physics.add.staticImage(2025, 725, "14");
+		const snowPlatformLeft_3 = this.physics.add.staticImage(2025, 725, "snow14");
 		snowPlatformLeft_3.body.setSize(128, 93, false);
 		snowPlatformLayer.add(snowPlatformLeft_3);
 
@@ -241,7 +240,7 @@ export default class Level extends Phaser.Scene {
 		snowPlatformLayer.add(snowPlatformRight_3);
 
 		// snowPlatformLeft_4
-		const snowPlatformLeft_4 = this.physics.add.staticImage(2530, 915, "14");
+		const snowPlatformLeft_4 = this.physics.add.staticImage(2530, 915, "snow14");
 		snowPlatformLeft_4.body.setSize(128, 93, false);
 		snowPlatformLayer.add(snowPlatformLeft_4);
 
@@ -394,7 +393,6 @@ export default class Level extends Phaser.Scene {
 					this.pauseMenu.on('pointerdown', () => {
 						this.scene.sleep('Level').run('PauseMenu')      
 				})
-        })
 	}
 
 	private initCamera(): void {

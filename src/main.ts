@@ -42,8 +42,8 @@ const config: Types.Core.GameConfig = {
         Level,
         Controls,
         PlayerSelector,
-        PauseMenu
-        Level2 
+        PauseMenu,
+        Level2
     ],
 };
 

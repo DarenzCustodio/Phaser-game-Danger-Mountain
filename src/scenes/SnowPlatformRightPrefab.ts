@@ -15,7 +15,7 @@ export default interface SnowPlatformRightPrefab {
 export default class SnowPlatformRightPrefab extends Phaser.Physics.Arcade.Image {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 317, y ?? 416, texture || "16", frame);
+		super(scene, x ?? 317, y ?? 416, texture || "snow16", frame);
 
 		scene.physics.add.existing(this, true);
 		this.body.setSize(128, 93, false);

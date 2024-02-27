@@ -15,7 +15,7 @@ export default interface SnowGround2Prefab {
 export default class SnowGround2Prefab extends Phaser.Physics.Arcade.Image {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 420, y ?? 275, texture || "11", frame);
+		super(scene, x ?? 420, y ?? 275, texture || "snow11", frame);
 
 		this.flipX = true;
 		scene.physics.add.existing(this, true);
