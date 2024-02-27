@@ -1,7 +1,5 @@
 import { Boot } from './scenes/Boot';
 import { Instructions } from './scenes/Instructions';
-import { Level } from './scenes/Level';
-import { Controls } from './scenes/Controls';
 import  Level from "./scenes/Level";
 import Level2 from './scenes/Level2';
 import { MainMenu } from './scenes/MainMenu';
