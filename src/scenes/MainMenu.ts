@@ -86,7 +86,7 @@ export class MainMenu extends Scene
             align: 'center'
         }).setInteractive();
         this.leaderBoardsText.on('pointerdown', () => {
-            this.scene.sleep('MainMenu').run('Controls')
+            this.scene.sleep('MainMenu').run('Leaderboard')
         });
         this.settingsText = this.add.text(825, 50, '< Settings >', {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',

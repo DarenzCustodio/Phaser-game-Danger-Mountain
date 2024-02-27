@@ -1,5 +1,6 @@
 import { Boot } from './scenes/Boot';
 import { Instructions } from './scenes/Instructions';
+import { Leaderboard } from './scenes/Leaderboard';
 import  Level from "./scenes/Level";
 import Level2 from './scenes/Level2';
 import { MainMenu } from './scenes/MainMenu';
@@ -42,6 +43,7 @@ const config: Types.Core.GameConfig = {
         MainMenu,
         Instructions,
         Settings,
+        Leaderboard,
         PlayerSelector,
         PauseMenu,
         Level,
