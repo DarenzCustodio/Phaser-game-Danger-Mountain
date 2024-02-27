@@ -19,7 +19,7 @@ const config: Types.Core.GameConfig = {
     width: 3000,
     height: 2000,
     parent: 'game-container',
-    backgroundColor: 0x27ae60,
+    backgroundColor: 0x0000,
     scale: {
         
 
