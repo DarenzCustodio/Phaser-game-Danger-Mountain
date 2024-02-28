@@ -22,7 +22,6 @@ export class MainMenu extends Scene
 
     create ()
     {
-        console.log("yo")
         // Configure the game to fit within a specific size
         const screenWidth = 1024;
         const screenHeight = 768;
@@ -75,7 +74,7 @@ export class MainMenu extends Scene
 
         
 
-        this.controlsText = this.add.text(25, 50, '< Instructions >', {
+        this.controlsText = this.add.text(25, 25, '< Instructions >', {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
@@ -84,7 +83,7 @@ export class MainMenu extends Scene
             this.scene.sleep('MainMenu').run('Instructions')
         });
 
-        this.leaderBoardsText = this.add.text(410, 50, '< Leaderboards >', {
+        this.leaderBoardsText = this.add.text(410, 25, '< Leaderboards >', {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
@@ -92,7 +91,7 @@ export class MainMenu extends Scene
         this.leaderBoardsText.on('pointerdown', () => {
             this.scene.sleep('MainMenu').run('Leaderboard')
         });
-        this.settingsText = this.add.text(825, 50, '< Settings >', {
+        this.settingsText = this.add.text(825, 25, '< Settings >', {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
