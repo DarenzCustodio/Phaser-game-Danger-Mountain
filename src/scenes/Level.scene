@@ -391,17 +391,15 @@
             "label": "snowPlatformLayer",
             "list": [
                 {
-                    "type": "ArcadeImage",
-                    "id": "ecb743db-230b-4733-9498-526158893309",
-                    "label": "snowPlatformLeft",
-                    "texture": {
-                        "key": "14"
-                    },
-                    "x": 340,
-                    "y": 900,
-                    "physicsType": 1,
-                    "body.width": 128,
-                    "body.height": 93
+                    "prefabId": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
+                    "id": "f9070d80-8adc-4278-afd3-cb8259c4fc25",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformLeftPrefab",
+                    "x": 335,
+                    "y": 900
                 },
                 {
                     "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
@@ -426,17 +424,15 @@
                     "y": 900
                 },
                 {
-                    "type": "ArcadeImage",
-                    "id": "34cc138f-dc69-41af-bb5a-9b4f81c228b9",
-                    "label": "snowPlatformLeft_1",
-                    "texture": {
-                        "key": "14"
-                    },
-                    "x": 910,
-                    "y": 735,
-                    "physicsType": 1,
-                    "body.width": 128,
-                    "body.height": 93
+                    "prefabId": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
+                    "id": "96e10b26-a890-47f6-96d4-80d45c3f9249",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformLeftPrefab_1",
+                    "x": 905,
+                    "y": 735
                 },
                 {
                     "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
@@ -461,17 +457,15 @@
                     "y": 735
                 },
                 {
-                    "type": "ArcadeImage",
-                    "id": "ed36e907-94d7-4249-9b5c-9a182622aca7",
-                    "label": "snowPlatformLeft_2",
-                    "texture": {
-                        "key": "14"
-                    },
-                    "x": 1510,
-                    "y": 925,
-                    "physicsType": 1,
-                    "body.width": 128,
-                    "body.height": 93
+                    "prefabId": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
+                    "id": "d07cc8a7-dafc-451d-9d31-ae8be9e44489",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformLeftPrefab_2",
+                    "x": 1505,
+                    "y": 925
                 },
                 {
                     "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
@@ -496,17 +490,15 @@
                     "y": 925
                 },
                 {
-                    "type": "ArcadeImage",
-                    "id": "8876ca5b-647a-4639-bd48-1a8a30607c44",
-                    "label": "snowPlatformLeft_3",
-                    "texture": {
-                        "key": "14"
-                    },
-                    "x": 2025,
-                    "y": 725,
-                    "physicsType": 1,
-                    "body.width": 128,
-                    "body.height": 93
+                    "prefabId": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
+                    "id": "f570a92e-dee6-484d-89ac-2bee6d1cdd80",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformLeftPrefab_3",
+                    "x": 2020,
+                    "y": 725
                 },
                 {
                     "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
@@ -531,17 +523,15 @@
                     "y": 725
                 },
                 {
-                    "type": "ArcadeImage",
-                    "id": "dfa3d13d-f50c-49fc-b828-e28aba884f91",
-                    "label": "snowPlatformLeft_4",
-                    "texture": {
-                        "key": "14"
-                    },
-                    "x": 2530,
-                    "y": 915,
-                    "physicsType": 1,
-                    "body.width": 128,
-                    "body.height": 93
+                    "prefabId": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
+                    "id": "56f88fff-a23c-43b4-b2f9-e656099f3523",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "snowPlatformLeftPrefab_4",
+                    "x": 2525,
+                    "y": 915
                 },
                 {
                     "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
@@ -580,6 +570,18 @@
             "x": 16,
             "y": 1043,
             "collideWorldBounds": true
+        },
+        {
+            "prefabId": "86b760a6-8aad-43bd-a87c-986e4f8c4049",
+            "id": "c281a540-f647-4c7f-94d2-a5cf2715341c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "enchantress",
+            "scope": "CLASS",
+            "x": 205,
+            "y": 1050
         },
         {
             "type": "Layer",
@@ -824,6 +826,61 @@
             "object2": "snowballsLayer.list",
             "collideCallback": "this.hitSnowball as any",
             "callbackContext": "this"
+        },
+        {
+            "id": "9ce69073-9f04-4a85-92a8-01f5567f23ac",
+            "type": "Collider",
+            "label": "enchantress_snowGround_collider",
+            "scope": "METHOD",
+            "object1": "enchantress",
+            "object2": "snowGroundLayer.list"
+        },
+        {
+            "id": "b302e982-e37b-45f2-b0de-bdf7fc882719",
+            "type": "Collider",
+            "label": "enchantress_snowPlatforms_collider",
+            "scope": "LOCAL",
+            "object1": "enchantress",
+            "object2": "snowPlatformLayer.list"
+        },
+        {
+            "id": "88ff929e-3e79-4b3f-9dd4-10bdc8e24fb4",
+            "type": "Collider",
+            "label": "enchantress_coins_collider",
+            "scope": "METHOD",
+            "object1": "enchantress",
+            "object2": "coinsLayer.list",
+            "overlapOnly": true,
+            "collideCallback": "this.enchantressCollectCoins as any",
+            "callbackContext": "this"
+        },
+        {
+            "id": "c83254b4-5a9e-4fad-b074-a046053569b6",
+            "type": "Collider",
+            "label": "enchantress_snowballs_collider",
+            "scope": "METHOD",
+            "object1": "enchantress",
+            "object2": "snowballsLayer.list",
+            "collideCallback": "this.enchantressHitSnowball as any",
+            "callbackContext": "this"
+        },
+        {
+            "id": "ec1b8d91-0a66-4930-850d-3dbb2f2f6aca",
+            "type": "Keyboard.Key",
+            "label": "e_runRightKey",
+            "keyCode": "RIGHT"
+        },
+        {
+            "id": "994ca50f-bd27-40f8-a520-9db878dfcfd0",
+            "type": "Keyboard.Key",
+            "label": "e_jumpKey",
+            "keyCode": "UP"
+        },
+        {
+            "id": "76d8daba-5435-424f-b13f-293df65e8882",
+            "type": "Keyboard.Key",
+            "label": "e_runLeftKey",
+            "keyCode": "LEFT"
         }
     ],
     "meta": {
@@ -874,11 +931,9 @@
             "id": "b8ab5043-4aef-4ed5-b72c-08db0154613d",
             "label": "snowPlatforms",
             "objectIds": [
-                "ecb743db-230b-4733-9498-526158893309",
                 "378f753d-296e-4ec6-9bb8-fada54b3b2f7",
                 "a57243e5-a569-4e76-875b-3b1623a86a1c"
             ]
         }
     ]
 }
-​

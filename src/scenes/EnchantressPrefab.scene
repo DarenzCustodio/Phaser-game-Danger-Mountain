@@ -1,5 +1,5 @@
 {
-    "id": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
+    "id": "86b760a6-8aad-43bd-a87c-986e4f8c4049",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -15,17 +15,18 @@
     },
     "displayList": [
         {
-            "type": "ArcadeImage",
-            "id": "881515a0-e28c-434a-80ba-b7461663809a",
-            "label": "14",
+            "type": "ArcadeSprite",
+            "id": "e064e352-38f0-4a23-8ebb-ca8ba642d18d",
+            "label": "enchantress",
+            "scope": "CLASS",
             "texture": {
-                "key": "snow14"
+                "key": "EnchantressIdle",
+                "frame": 0
             },
-            "x": 384,
-            "y": 241,
-            "physicsType": 1,
+            "x": 407,
+            "y": 472,
             "body.width": 128,
-            "body.height": 93
+            "body.height": 128
         }
     ],
     "plainObjects": [],
@@ -34,5 +35,17 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "autoPlayEnhantressAnimation",
+            "label": "Auto Play Enchantress Animation",
+            "tooltip": "",
+            "defValue": "e_Idle",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        }
+    ]
 }
