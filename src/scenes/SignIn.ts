@@ -1,6 +1,7 @@
 import { Scene, GameObjects } from 'phaser';
 import axios from 'axios';
 import { currentUser, setCurrentUser} from './currentUser';
+import { use } from 'matter';
 
 export class SignIn extends Scene {
     background!: GameObjects.Image;
@@ -14,6 +15,7 @@ export class SignIn extends Scene {
     isSignIn: boolean = true;
     formContent: string = '';
     isSignInError: boolean = false;
+    isSignUpError: boolean = false;
     errorMessage!: GameObjects.Text;
 
     constructor() {
@@ -25,48 +27,43 @@ export class SignIn extends Scene {
         const screenHeight = 768;
         this.scale.resize(screenWidth, screenHeight);
 
-        // Create and position the background image
         this.background = this.add.image(screenWidth / 2, screenHeight / 2, "background");
         this.background.setScale(screenWidth / this.background.width, screenHeight / this.background.height);
 
-        // Add translucent rectangle
         const graphics = this.add.graphics();
         graphics.fillStyle(0x000000, 0.5);
         graphics.fillRoundedRect(10, 60, 1000, 700, 20);
         graphics.setDepth(0);
 
-        // Add title
         this.title = this.add.text(512, 120, 'Account Login', {
             fontFamily: 'Arial Black', fontSize: 90, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         }).setOrigin(0.5);
 
-        // Create sign-in form
         this.createSignInForm(screenWidth, screenHeight);
 
-        // Add switchable text for Sign In / Sign Up
         this.createSwitchableText();
 
-        // Handle form submission
         this.handleFormSubmission();
 
 
-        // Add back to main menu text
         this.backToMenuText = this.add.text(25, 25, '< Back to Main Menu >', {
             fontFamily: 'Arial Black', fontSize: 18, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         }).setInteractive();
         this.backToMenuText.on('pointerdown', () => {
-            // Clean up the form before navigating back to the main menu
             this.signInForm.remove();
             this.scene.stop('SignIn').start('MainMenu');
         });
 
-        const errorMessage = this.isSignInError === true ? 'Incorrect username or password, please try again.' : ''
+        const errorMessage = this.isSignInError === true
+            ? 'Incorrect username or password, please try again.'
+            : this.isSignUpError === true
+                ? 'Username already in use, please try another username.'
+                : '';
 
-          // Add error message
           this.errorMessage = this.add.text(500, 550, errorMessage , {
             fontFamily: 'Arial Black', fontSize: 18, color: '#FF0000',
             stroke: '#000000', strokeThickness: 8,
@@ -75,7 +72,6 @@ export class SignIn extends Scene {
 
 
     update() {
-        // Save the form content when the scene is deactivated
         if (!this.scene.isActive('SignIn') && this.signInForm) {
             this.formContent = this.signInForm.outerHTML;
             this.signInForm.remove();
@@ -83,18 +79,16 @@ export class SignIn extends Scene {
     }
 
     private createSignInForm(screenWidth: number, screenHeight: number) {
-        // Calculate the position of the form to be centered within the translucent rectangle
-        const formX = 800; // X position of the form
-        const formY = 300; // Y position of the form
+        const formX = 800; 
+        const formY = 300; 
     
         this.signInForm = document.createElement('form');
         this.signInForm.action = 'javascript:void(0)';
         this.signInForm.style.position = 'absolute';
-        this.signInForm.style.left = formX + 'px'; // Set left position
-        this.signInForm.style.top = formY + 'px'; // Set top position
+        this.signInForm.style.left = formX + 'px'; 
+        this.signInForm.style.top = formY + 'px'; 
         this.signInForm.style.textAlign = "center";
     
-        // Add label and input box for username
         const usernameLabel = document.createElement('label');
         usernameLabel.htmlFor = 'username';
         usernameLabel.innerText = 'Username: ';
@@ -105,15 +99,14 @@ export class SignIn extends Scene {
         usernameInput.name = 'username';
         usernameInput.placeholder = 'Enter your username';
         usernameInput.required = true;
-        usernameInput.style.display = 'block'; // Set display to block
-        usernameInput.style.margin = '0 auto'; // Center horizontally
+        usernameInput.style.display = 'block'; 
+        usernameInput.style.margin = '0 auto'; 
         usernameInput.style.width = '300px';
         usernameInput.style.fontSize = '24px';
         this.signInForm.appendChild(usernameInput);
         this.signInForm.appendChild(document.createElement('br'));
         this.signInForm.appendChild(document.createElement('br'));
     
-        // Add label and input box for password
         const passwordLabel = document.createElement('label');
         passwordLabel.htmlFor = 'password';
         passwordLabel.innerText = 'Password: ';
@@ -124,20 +117,19 @@ export class SignIn extends Scene {
         passwordInput.name = 'password';
         passwordInput.placeholder = 'Enter your password';
         passwordInput.required = true;
-        passwordInput.style.display = 'block'; // Set display to block
-        passwordInput.style.margin = '0 auto'; // Center horizontally
+        passwordInput.style.display = 'block'; 
+        passwordInput.style.margin = '0 auto'; 
         passwordInput.style.width = '300px';
         passwordInput.style.fontSize = '24px';
         this.signInForm.appendChild(passwordInput);
         this.signInForm.appendChild(document.createElement('br'));
         this.signInForm.appendChild(document.createElement('br'));
     
-        // Add submit button
         this.submitButton = document.createElement('button');
         this.submitButton.type = 'submit';
         this.setSubmitButtonText();
-        this.submitButton.style.display = 'block'; // Set display to block
-        this.submitButton.style.margin = '0 auto'; // Center horizontally
+        this.submitButton.style.display = 'block';
+        this.submitButton.style.margin = '0 auto'; 
         this.submitButton.style.fontSize = '30px';
         this.signInForm.appendChild(this.submitButton);
 
@@ -195,10 +187,29 @@ export class SignIn extends Scene {
 
                 }
                 
-                // Add your sign-in logic here
             } else {
-                console.log('Signing Up with Username:', username, 'and Password:', password);
-                // Add your sign-up logic here
+                let foundError= false;
+                const body = {username: username, password : password}
+
+                await axios.post(`https://game-app-be-v2.onrender.com/users/`, body).then((response) => {
+                    setCurrentUser(response.data.user.username)
+                }).catch((error) => {
+                    foundError = true;
+                    console.error(error);
+                });
+                
+                if (foundError === false){
+                    this.signInForm.remove()
+                    this.isSignUpError = false
+                    this.isSignIn = true
+                    this.scene.stop('SignIn').start('SignInConfirmed');
+                } else {
+                    this.signInForm.remove()
+                    this.isSignIn = true
+                    this.isSignUpError = true
+                    this.scene.stop('SignIn').start('SignIn');
+
+                }
             }
             (this.signInForm.querySelector('input[name="username"]') as HTMLInputElement).value = '';
             (this.signInForm.querySelector('input[name="password"]') as HTMLInputElement).value = '';
