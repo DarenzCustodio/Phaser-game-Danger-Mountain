@@ -24,6 +24,7 @@ export class Boot extends Scene
         this.load.image('RIGHT', 'assets/RIGHT.png')
         this.load.pack("assets", assetPackUrl)
         this.load.pack("pack", preloadAssetPackUrl);
+        this.load.html('SignInForm', 'SignInForm.html');
     }
 
     create ()

@@ -13,6 +13,7 @@ import ScorePrefab from "../gameComponents/ScorePrefab";
 import BombPrefab from "../gameComponents/BombPrefab";
 import SnowballPrefab from "./SnowballPrefab";
 import { ANIM_IDLE } from "../../static/assets/swordsman_animations";
+import { currentUser } from "./currentUser";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
