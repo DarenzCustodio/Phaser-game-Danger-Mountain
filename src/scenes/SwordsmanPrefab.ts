@@ -55,7 +55,7 @@ export default class SwordsmanPrefab extends Phaser.Physics.Arcade.Sprite {
 
 	stopMoving(){
 		this.setVelocity(0);
-		// this.setVelocityY(200);
+	    this.setVelocityY(200);
 		this.play(ANIM_IDLE, true);
 	}
 	jump(){
