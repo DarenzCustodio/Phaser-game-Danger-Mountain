@@ -1,7 +1,7 @@
 // You can write more code here
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
+import Phaser, { GameObjects } from "phaser";
 import SnowGround2Prefab from "./SnowGround2Prefab";
 import SnowPlatformLeftPrefab from "./SnowPlatformLeftPrefab";
 import SnowPlatformMiddlePrefab from "./SnowPlatformMiddlePrefab";
@@ -17,7 +17,7 @@ import { ANIM_IDLE } from "../../static/assets/swordsman_animations";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
-
+    playerKey!:string;
 	constructor() {
 		super("Level");
 
@@ -25,6 +25,7 @@ export default class Level extends Phaser.Scene {
         // Write your code here.
         /* END-USER-CTR-CODE */
 	}
+
 
 	editorCreate(): void {
 
@@ -256,13 +257,13 @@ export default class Level extends Phaser.Scene {
 
 		// swordsman
 		const swordsman = new SwordsmanPrefab(this, 16, 1043);
-		this.add.existing(swordsman);
+		this.add.existing(swordsman).setVisible(false);
 		swordsman.body.collideWorldBounds = true;
 
 		// enchantress
-		const enchantress = new EnchantressPrefab(this, 205, 1050);
-		this.add.existing(enchantress);
-
+		const enchantress = new EnchantressPrefab(this, 16, 1043);
+		this.add.existing(enchantress).setVisible(false);
+        enchantress.body.collideWorldBounds = true;
 		// coinsLayer
 		const coinsLayer = this.add.layer();
 
@@ -398,6 +399,10 @@ export default class Level extends Phaser.Scene {
 	/* START-USER-CODE */
     private gameOver = false;
     // Write your code here
+    init(data: { image: string; }){
+        this.playerKey=data.image;
+    }
+
     preload(){
         this.load.setPath('assets')
         this.load.audio({
@@ -405,11 +410,20 @@ export default class Level extends Phaser.Scene {
           url: "/collectCoin.mp3",
           });
     }
-
+    
     create() {
         this.editorCreate();
         this.initCamera();
-            this.swordsman.setPosition(74, 1000)
+        if(this.playerKey === 'Idle'){
+            this.swordsman.setVisible(true);
+            // this.swordsman.body.collideWorldBounds = false;
+        }
+        else if(this.playerKey === 'EnchantressIdle'){
+            this.enchantress.setVisible(true);
+            // this.enchantress.body.collideWorldBounds =false;
+        }
+            this.swordsman.setPosition(16, 1043)
+            
             this.swordsman.clearTint();
             this.swordsman.play(ANIM_IDLE)
             this.physics.resume()
@@ -417,16 +431,21 @@ export default class Level extends Phaser.Scene {
                         this.scene.sleep("Level").run("PauseMenu");
                       });
                       this.input.keyboard?.addKey("Q").on("down", () => {
-                          this.scene.sleep("Level").run("MainMenu"); 
-                          this.swordsman.setPosition(74, 1000);
+                          this.scene.sleep('Level').run("MainMenu"); 
+                          //this.swordsman.body.reset(16, 1043);
                           this.scoreText.addScore(0);
                       });
         this.sound.add("coinMusic");
     }
     private initCamera(): void {
         this.cameras.main.setSize(this.game.scale.width, this.game.scale.height);
-        this.cameras.main.startFollow(this.swordsman, true, 0.09, 0.09);
         this.cameras.main.setZoom(0.5);
+        if(this.playerKey === 'Idle'){
+        this.cameras.main.startFollow(this.swordsman, true, 0.09, 0.09);
+        }else if(this.playerKey === 'EnchantressIdle'){
+            this.cameras.main.startFollow(this.enchantress, true, 0.09, 0.09);
+            }
+        
       }
 
 	  private enchantressCollectCoins(player: EnchantressPrefab, coin: CoinPrefab){

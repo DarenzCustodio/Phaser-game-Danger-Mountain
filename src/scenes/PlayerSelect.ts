@@ -2,7 +2,8 @@ import { Scene, GameObjects } from 'phaser'
 export class PlayerSelector extends Scene
 {
     title!: GameObjects.Text;
-    start!: GameObjects.Text;
+    start1!: GameObjects.Text;
+    start2!: GameObjects.Text;
     player1!: GameObjects.Image;
     player2!: GameObjects.Image;
     player3!: GameObjects.Image;
@@ -22,35 +23,59 @@ export class PlayerSelector extends Scene
         this.backToMain.on('pointerdown', () => {
           this.scene.sleep('PlayerSelector').run('MainMenu')      
       })
-       this.player1 = this.add.image(412, 350, 'Idle')
+       this.player1 = this.add.sprite(450, 350, 'Idle').setInteractive()
         
-      this.player2 = this.add.image(512, 380, 'idle-ninja')
-        .setInteractive()
-        this.player2.on('pointerdown', () => {
-         
-        })
-        this.player2.scaleX = 0.165
-        this.player2.scaleY = 0.165
+      this.player2 = this.add.sprite(550, 350, 'EnchantressIdle').setInteractive()
         
-      this.player3 = this.add.image(612, 375, 'idleknight');
-      this.player3.scaleX = 0.155
-      this.player3.scaleY = 0.155
-          // this.load.image('background', "assets/mainMenuBackground.png")
-      
-          this.title = this.add.text(512, 125, 'Character Selector', {
+      //Group the player
+      const playerGroup = this.add.group([this.player1,this.player2]);
+
+      //Select a character for playing
+      this.player1.on("pointerdown", () =>{
+        // this.player2.postFX.destroy();
+        this.player1.preFX?.addGlow();
+        this.player2.preFX?.clear();
+          this.start1.setInteractive();
+          this.start1.setVisible(true);
+      });
+
+      this.player2.on("pointerdown", () =>{
+        // this.player1.postFX.destroy();
+        this.player1.preFX?.clear();
+        this.player2.preFX?.addGlow();
+          this.start2.setInteractive();
+          this.start2.setVisible(true);
+      });
+
+     
+
+       this.title = this.add.text(512, 125, 'Character Selector', {
             fontFamily: 'Arial Black', fontSize: 40   , color: '#ffffff',
               stroke: '#000000', strokeThickness: 8,
               align: 'center'
             }).setOrigin(0.5);
   
-        this.start = this.add.text(512, 600, '< Play Game >', {
+        //start scene with selected character
+        this.start1 = this.add.text(512, 600, '< Play Game >', {
           fontFamily: 'Arial Black', fontSize: 45, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         }).setOrigin(0.5)
-        .setInteractive();
-        this.start.on('pointerdown', () => {
-            this.scene.sleep('PlayerSelector').run('Level')      
+        .setInteractive().setVisible(false);
+        this.start1.on('pointerdown', () => {
+            // this.scene.sleep('PlayerSelector').run('Level')
+            this.scene.start("Level", {image: "Idle"});	      
+        })
+        this.start2 = this.add.text(512, 600, '< Play Game >', {
+          fontFamily: 'Arial Black', fontSize: 45, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 8,
+            align: 'center'
+        }).setOrigin(0.5)
+        .setInteractive().setVisible(false);
+        this.start2.on('pointerdown', () => {
+            // this.scene.sleep('PlayerSelector').run('Level')
+            this.scene.start("Level", {image: "EnchantressIdle"});
         })
       }
+      
 }
