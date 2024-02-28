@@ -1,5 +1,7 @@
 import { Scene, GameObjects } from 'phaser';
 
+import {currentUser} from './currentUser'
+
 export class MainMenu extends Scene
 {
     background!: GameObjects.Image;
@@ -20,7 +22,7 @@ export class MainMenu extends Scene
 
     create ()
     {
-
+        console.log("yo")
         // Configure the game to fit within a specific size
         const screenWidth = 1024;
         const screenHeight = 768;
@@ -51,23 +53,25 @@ export class MainMenu extends Scene
             this.scene.sleep('MainMenu').run('PlayerSelector')      
         }).setOrigin(0.5);
 
-        this.signInText = this.add.text(512, 525, '< Sign in >', {
+        const signInOrOutText = currentUser === 'Guest' ? '< Sign In >' : '< Sign Out >';
+        this.signInText = this.add.text(512, 525, signInOrOutText, {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         }).setInteractive();
         this.signInText.on('pointerdown', () => {
-            this.scene.sleep('MainMenu').run('Controls')
+            if (currentUser === 'Guest') {
+                this.scene.sleep('MainMenu').run('SignIn');
+            } else {
+                this.scene.sleep('MainMenu').run('SignOut');
+            }
         }).setOrigin(0.5);
 
-        this.playingAsText  = this.add.text(512, 475, '< Playing as: Guest >', {
+        this.playingAsText  = this.add.text(512, 475, `< Playing as: ${currentUser} >`, {
             fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
-        }).setInteractive();
-        this.playingAsText.on('pointerdown', () => {
-            this.scene.sleep('MainMenu').run('Controls')
-        }).setOrigin(0.5);
+        }).setOrigin(0.5)
 
         
 

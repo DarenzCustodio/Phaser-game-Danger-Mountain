@@ -9,6 +9,9 @@ import { Preloader } from './scenes/Preloader';
 import {Settings} from './scenes/Settings'
 import { PauseMenu } from './scenes/PauseMenu'
 import { Game, Types } from "phaser";
+import { SignIn } from './scenes/SignIn';
+import { SignOut } from './scenes/SignOut';
+import { SignInConfirmed } from './scenes/SignInConfirmed';
 
 
 //  Find out more information about the Game Config at:
@@ -46,6 +49,9 @@ const config: Types.Core.GameConfig = {
         Leaderboard,
         PlayerSelector,
         PauseMenu,
+        SignIn,
+        SignOut,
+        SignInConfirmed,
         Level,
         Level2
     ]

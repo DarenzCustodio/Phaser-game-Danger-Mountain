@@ -56,9 +56,9 @@ export class Leaderboard extends Scene
         });
 
         axios
-      .get("https://game-app-backend.onrender.com/leaderboard")
+      .get("https://game-app-be-v2.onrender.com/leaderboard")
       .then((response) => {
-        return response.data;
+        return response.data.leaderboard;
       })
       .then((leaderboardData: any) => {
         this.displayLeaderboard(leaderboardData);
