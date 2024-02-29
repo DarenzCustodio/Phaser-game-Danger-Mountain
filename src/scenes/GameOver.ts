@@ -1,5 +1,6 @@
 import { Scene, GameObjects } from 'phaser';
 import { currentUser, setCurrentUser } from './currentUser';
+import axios from 'axios';
 
 export class GameOver extends Scene {
     background!: GameObjects.Image;
@@ -17,7 +18,19 @@ export class GameOver extends Scene {
     }
 
     create() {
+       if (currentUser !== "Guest"){
+            axios
+              .post("https://game-app-be-v2.onrender.com/leaderboard", {
+                username: currentUser,
+                score: this.score,
+              }).then((result) => {
+              })
+              .catch((error) => {
+                console.log("Unsuccesful request", error);
+              });
 
+            }
+          
       
         const screenWidth = 1024;
         const screenHeight = 768;
@@ -54,7 +67,9 @@ export class GameOver extends Scene {
             align: 'center'
         }).setInteractive();
         this.returnToMainMenuText.on('pointerdown', () => {
-            this.scene.stop('SignInConfirmed').start('MainMenu');
+                this.scene.stop('GameOver').start('MainMenu'); 
+         
         }).setOrigin(0.5);
     }
 }
+
