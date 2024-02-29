@@ -494,33 +494,45 @@
                     "id": "f570a92e-dee6-484d-89ac-2bee6d1cdd80",
                     "unlock": [
                         "x",
-                        "y"
+                        "y",
+                        "scaleX",
+                        "scaleY"
                     ],
                     "label": "snowPlatformLeftPrefab_3",
-                    "x": 2020,
-                    "y": 725
+                    "x": 2000,
+                    "y": 685,
+                    "scaleX": 0.8778335402574207,
+                    "scaleY": 0.8713338364783471
                 },
                 {
                     "prefabId": "249e39e6-f374-4e33-accf-d76a7b130ecb",
                     "id": "c3d40183-c066-4ca8-af40-83d9c6fd1f3f",
                     "unlock": [
                         "x",
-                        "y"
+                        "y",
+                        "scaleX",
+                        "scaleY"
                     ],
                     "label": "snowPlatformMiddle_3",
-                    "x": 2145,
-                    "y": 725
+                    "x": 2110,
+                    "y": 685,
+                    "scaleX": 0.9145213780582662,
+                    "scaleY": 0.8360188996497553
                 },
                 {
                     "prefabId": "d260264b-d8f5-4071-9d56-b50fbd451026",
                     "id": "ce44bd06-9041-4ddc-ab45-f2e5ac8b32c8",
                     "unlock": [
                         "x",
-                        "y"
+                        "y",
+                        "scaleX",
+                        "scaleY"
                     ],
                     "label": "snowPlatformRight_3",
-                    "x": 2270,
-                    "y": 725
+                    "x": 2220,
+                    "y": 685,
+                    "scaleX": 0.8628644857997444,
+                    "scaleY": 0.8802061948311004
                 },
                 {
                     "prefabId": "ab085875-b29b-4cd0-b95d-ac18cb66a26e",
@@ -563,13 +575,15 @@
             "unlock": [
                 "x",
                 "y",
-                "collideWorldBounds"
+                "collideWorldBounds",
+                "onWorldBounds"
             ],
             "label": "swordsman",
             "scope": "CLASS",
             "x": 16,
             "y": 1043,
-            "collideWorldBounds": true
+            "collideWorldBounds": true,
+            "onWorldBounds": false
         },
         {
             "prefabId": "86b760a6-8aad-43bd-a87c-986e4f8c4049",
@@ -685,8 +699,8 @@
                         "y"
                     ],
                     "label": "coin_9",
-                    "x": 2100,
-                    "y": 605
+                    "x": 2115,
+                    "y": 590
                 },
                 {
                     "prefabId": "84aa06ff-6ea7-4bd5-bdd0-500cb9ac8651",

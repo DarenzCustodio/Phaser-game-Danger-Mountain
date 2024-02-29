@@ -17,6 +17,7 @@ export default class SnowballPrefab extends Phaser.Physics.Arcade.Image {
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
 		super(scene, x ?? 277, y ?? 393, texture || "snowball", frame);
 
+		this.setInteractive(new Phaser.Geom.Circle(5, 5, 5), Phaser.Geom.Circle.Contains);
 		scene.physics.add.existing(this, false);
 		this.body.bounce.x = 1;
 		this.body.bounce.y = 1;
