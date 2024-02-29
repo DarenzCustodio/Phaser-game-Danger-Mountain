@@ -475,12 +475,12 @@ export default class Level extends Phaser.Scene {
         this.physics.pause();
         enchantress.die();
         this.gameOver = true;
-		const scoreText = this.scoreText.text; 
-		const scoreValue = parseInt(scoreText.split(': ')[1]);
-		setTimeout(() => {
-		this.scene.sleep('Level')
-		this.scene.start("GameOver", {score: scoreValue })			
-		}, 2000)
+		// const scoreText = this.scoreText.text; 
+		// const scoreValue = parseInt(scoreText.split(': ')[1]);
+		// setTimeout(() => {
+		// this.scene.sleep('Level')
+		// this.scene.start("GameOver", {score: scoreValue })			
+		// }, 2000)
 
     }
 
