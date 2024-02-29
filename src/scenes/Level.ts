@@ -319,7 +319,7 @@ export default class Level extends Phaser.Scene {
 		scoreText.tintTopRight = 14603783;
 		scoreText.tintBottomLeft = 14603783;
 		scoreText.tintBottomRight = 14603783;
-		scoreText.setStyle({ "fontFamily": "Courier", "fontSize": "40px" });
+		scoreText.setStyle({ "fontFamily": "Arial Black", "fontSize": "75px" });
 
 		// lists
 		const platforms_: Array<any> = [];
@@ -508,8 +508,15 @@ export default class Level extends Phaser.Scene {
         if(this.gameOver){
             return;
         }
-        this.scoreText.x = this.swordsman.body.position.x;
-        this.scoreText.y = this.swordsman.body.position.y; 
+		const cameraScrollX = this.cameras.main.scrollX;
+		const cameraScrollY = this.cameras.main.scrollY;
+		const offsetX = 275; 
+		const offsetY = 300; 
+
+		this.scoreText.setOrigin(0.5)
+
+        this.scoreText.x = cameraScrollX - offsetX;
+        this.scoreText.y = cameraScrollY - offsetY; 
         this.updateSwordsman();
 		this.updateEnchantress();
     }
