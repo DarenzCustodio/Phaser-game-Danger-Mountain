@@ -18,6 +18,10 @@
             "type": "ArcadeImage",
             "id": "45e8c411-db2b-49a4-8778-2bfe24cdff0d",
             "label": "snowball",
+            "hitArea.shape": "CIRCLE",
+            "hitArea.x": 5,
+            "hitArea.y": 5,
+            "hitArea.radius": 5,
             "texture": {
                 "key": "snowball"
             },

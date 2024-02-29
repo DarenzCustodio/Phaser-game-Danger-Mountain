@@ -48,7 +48,7 @@ export default class EnchantressPrefab extends Phaser.Physics.Arcade.Sprite {
 	}
 	stopMoving(){
 		this.setVelocity(0);
-	    this.setVelocityY(200);
+	    this.setVelocityY(300);
 		this.play(ANIM_E_IDLE, true);
 	}
 	jump(){

@@ -1,7 +1,7 @@
 // You can write more code here
 /* START OF COMPILED CODE */
 
-import Phaser, { GameObjects } from "phaser";
+import Phaser from "phaser";
 import SnowGround2Prefab from "./SnowGround2Prefab";
 import SnowPlatformLeftPrefab from "./SnowPlatformLeftPrefab";
 import SnowPlatformMiddlePrefab from "./SnowPlatformMiddlePrefab";
@@ -18,7 +18,8 @@ import { currentUser } from "./currentUser";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
-    playerKey!:string;
+	playerKey!:string;
+
 	MenuInstructions!: GameObjects.Text;
 	constructor() {
 		super("Level");
@@ -27,7 +28,6 @@ export default class Level extends Phaser.Scene {
         // Write your code here.
         /* END-USER-CTR-CODE */
 	}
-
 
 	editorCreate(): void {
 
@@ -236,15 +236,21 @@ export default class Level extends Phaser.Scene {
 		snowPlatformLayer.add(snowPlatformMiddle_2);
 
 		// snowPlatformLeftPrefab_3
-		const snowPlatformLeftPrefab_3 = new SnowPlatformLeftPrefab(this, 2020, 725);
+		const snowPlatformLeftPrefab_3 = new SnowPlatformLeftPrefab(this, 2000, 685);
+		snowPlatformLeftPrefab_3.scaleX = 0.8778335402574207;
+		snowPlatformLeftPrefab_3.scaleY = 0.8713338364783471;
 		snowPlatformLayer.add(snowPlatformLeftPrefab_3);
 
 		// snowPlatformMiddle_3
-		const snowPlatformMiddle_3 = new SnowPlatformMiddlePrefab(this, 2145, 725);
+		const snowPlatformMiddle_3 = new SnowPlatformMiddlePrefab(this, 2110, 685);
+		snowPlatformMiddle_3.scaleX = 0.9145213780582662;
+		snowPlatformMiddle_3.scaleY = 0.8360188996497553;
 		snowPlatformLayer.add(snowPlatformMiddle_3);
 
 		// snowPlatformRight_3
-		const snowPlatformRight_3 = new SnowPlatformRightPrefab(this, 2270, 725);
+		const snowPlatformRight_3 = new SnowPlatformRightPrefab(this, 2220, 685);
+		snowPlatformRight_3.scaleX = 0.8628644857997444;
+		snowPlatformRight_3.scaleY = 0.8802061948311004;
 		snowPlatformLayer.add(snowPlatformRight_3);
 
 		// snowPlatformLeftPrefab_4
@@ -258,16 +264,16 @@ export default class Level extends Phaser.Scene {
 		// snowPlatformMiddle_4
 		const snowPlatformMiddle_4 = new SnowPlatformMiddlePrefab(this, 2650, 915);
 		snowPlatformLayer.add(snowPlatformMiddle_4);
-
+		
 		// swordsman
-		const swordsman = new SwordsmanPrefab(this, 16, 1043);
-		this.add.existing(swordsman).setVisible(false);
-		swordsman.body.collideWorldBounds = true;
-
-		// enchantress
-		const enchantress = new EnchantressPrefab(this, 16, 1043);
-		this.add.existing(enchantress).setVisible(false);
+        const swordsman = new SwordsmanPrefab(this, 16, 1043);
+        this.add.existing(swordsman).setVisible(false);
+        swordsman.body.collideWorldBounds = true;
+        // enchantress
+        const enchantress = new EnchantressPrefab(this, 16, 1043);
+        this.add.existing(enchantress).setVisible(false);
         enchantress.body.collideWorldBounds = true;
+
 		// coinsLayer
 		const coinsLayer = this.add.layer();
 
@@ -304,7 +310,7 @@ export default class Level extends Phaser.Scene {
 		coinsLayer.add(coin_8);
 
 		// coin_9
-		const coin_9 = new CoinPrefab(this, 2100, 605);
+		const coin_9 = new CoinPrefab(this, 2115, 590);
 		coinsLayer.add(coin_9);
 
 		// coin_10
@@ -322,7 +328,7 @@ export default class Level extends Phaser.Scene {
 		scoreText.tintTopRight = 14603783;
 		scoreText.tintBottomLeft = 14603783;
 		scoreText.tintBottomRight = 14603783;
-		scoreText.setStyle({ "fontFamily": "Arial Black", "fontSize": "75px" });
+		scoreText.setStyle({ "fontFamily": "Courier", "fontSize": "40px" });
 
 		// lists
 		const platforms_: Array<any> = [];
@@ -414,20 +420,20 @@ export default class Level extends Phaser.Scene {
           url: "/collectCoin.mp3",
           });
     }
-    
+
     create() {
         this.editorCreate();
         this.initCamera();
         if(this.playerKey === 'Idle'){
             this.swordsman.setVisible(true);
-            // this.swordsman.body.collideWorldBounds = false;
+            this.swordsman.body.collideWorldBounds = false;
         }
         else if(this.playerKey === 'EnchantressIdle'){
             this.enchantress.setVisible(true);
-            // this.enchantress.body.collideWorldBounds =false;
+            this.enchantress.body.collideWorldBounds =false;
         }
             this.swordsman.setPosition(16, 1043)
-            
+
             this.swordsman.clearTint();
             this.swordsman.play(ANIM_IDLE)
             this.physics.resume()
@@ -449,7 +455,7 @@ export default class Level extends Phaser.Scene {
         }else if(this.playerKey === 'EnchantressIdle'){
             this.cameras.main.startFollow(this.enchantress, true, 0.09, 0.09);
             }
-        
+
       }
 
 	  private enchantressCollectCoins(player: EnchantressPrefab, coin: CoinPrefab){
@@ -505,7 +511,7 @@ export default class Level extends Phaser.Scene {
         this.physics.pause();
         swordsman.die();
         this.gameOver = true;
-		
+
 		const scoreText = this.scoreText.text; 
 		const scoreValue = parseInt(scoreText.split(': ')[1]);
 		setTimeout(() => {
