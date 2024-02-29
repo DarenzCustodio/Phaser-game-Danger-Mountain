@@ -12,6 +12,7 @@ import { Game, Types } from "phaser";
 import { SignIn } from './scenes/SignIn';
 import { SignOut } from './scenes/SignOut';
 import { SignInConfirmed } from './scenes/SignInConfirmed';
+import { GameOver } from './scenes/GameOver';
 
 
 //  Find out more information about the Game Config at:
@@ -53,6 +54,7 @@ const config: Types.Core.GameConfig = {
         SignOut,
         SignInConfirmed,
         Level,
+        GameOver,
         Level2
     ]
 };
