@@ -44,11 +44,11 @@ export class PlayerSelector extends Scene
       graphics.setDepth(0); // sets layer
   
       
-      this.backToMain = this.add.text(75, 50, '< Main Menu >', {
-        fontFamily: 'Arial Black', fontSize: 15, color: '#ffffff',
-          stroke: '#000000', strokeThickness: 8,
-          align: 'center'
-        }).setOrigin(0.5)
+      this.backToMain = this.add.text(25, 25, '< Back to Main Menu >', {
+        fontFamily: 'Arial Black', fontSize: 18, color: '#ffffff',
+        stroke: '#000000', strokeThickness: 8,
+        align: 'center'
+        })
         .setInteractive();  
         this.backToMain.on('pointerdown', () => {
           this.scene.sleep('PlayerSelector').run('MainMenu')      

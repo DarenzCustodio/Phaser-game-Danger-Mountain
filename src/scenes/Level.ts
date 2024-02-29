@@ -18,9 +18,9 @@ import { currentUser } from "./currentUser";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
-
 	playerKey!:string;
 
+	MenuInstructions!: GameObjects.Text;
 	constructor() {
 		super("Level");
 
@@ -30,6 +30,8 @@ export default class Level extends Phaser.Scene {
 	}
 
 	editorCreate(): void {
+
+	
 
 		// runRight
 		const runRight = this.input.keyboard!.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
@@ -479,12 +481,12 @@ export default class Level extends Phaser.Scene {
         this.physics.pause();
         enchantress.die();
         this.gameOver = true;
-		const scoreText = this.scoreText.text; 
-		const scoreValue = parseInt(scoreText.split(': ')[1]);
-		setTimeout(() => {
-		this.scene.sleep('Level')
-		this.scene.start("GameOver", {score: scoreValue })			
-		}, 2000)
+		// const scoreText = this.scoreText.text; 
+		// const scoreValue = parseInt(scoreText.split(': ')[1]);
+		// setTimeout(() => {
+		// this.scene.sleep('Level')
+		// this.scene.start("GameOver", {score: scoreValue })			
+		// }, 2000)
 
     }
 
@@ -533,6 +535,19 @@ export default class Level extends Phaser.Scene {
 		const cameraScrollY = this.cameras.main.scrollY;
 		const offsetX = 275; 
 		const offsetY = 300; 
+
+		if(this.MenuInstructions){
+		this.MenuInstructions.destroy();
+		}
+
+		this.MenuInstructions = this.add.text(cameraScrollX + 1150, cameraScrollY - offsetY, 'Press [P] to Pause or [Q] to Quit', {
+			fontFamily: 'Arial Black', fontSize: 40, color: '#ffffff',
+			stroke: '#000000', strokeThickness: 8,
+			align: 'center'
+		})
+
+		this.MenuInstructions.setOrigin(0.5)
+	
 
 		this.scoreText.setOrigin(0.5)
 
